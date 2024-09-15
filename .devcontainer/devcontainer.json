@@ -17,6 +17,7 @@
         "-v", "/tmp/.X11-unix:/tmp/.X11-unix",
         "-v", "./ros2_ws:/root/ros2_ws"
     ],
+    "initializeCommand": "xhost +local:root",
     // These are the extensions I like to use with ROS2
     "extensions": [
         "ms-azuretools.vscode-docker",
