@@ -1,0 +1,5 @@
+[0.000000] (-) TimerEvent: {}
+[0.000103] (ardupilot_dds_tests) JobQueued: {'identifier': 'ardupilot_dds_tests', 'dependencies': OrderedDict({'ardupilot_msgs': '/root/ros2_ws/install/ardupilot_msgs', 'micro_ros_agent': '/root/ros2_ws/install/micro_ros_agent', 'ardupilot_sitl': '/root/ros2_ws/install/ardupilot_sitl', 'ardupilot_dds_tests': '/root/ros2_ws/install/ardupilot_dds_tests'})}
+[0.000210] (ardupilot_dds_tests) JobStarted: {'identifier': 'ardupilot_dds_tests'}
+[0.005049] (ardupilot_dds_tests) JobEnded: {'identifier': 'ardupilot_dds_tests', 'rc': 1}
+[0.015580] (-) EventReactorShutdown: {}

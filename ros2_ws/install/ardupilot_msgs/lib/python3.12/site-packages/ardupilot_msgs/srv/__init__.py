@@ -1,0 +1,8 @@
+from ardupilot_msgs.srv._arm_motors import ArmMotors  # noqa: F401
+from ardupilot_msgs.srv._arm_motors import ArmMotors_Event  # noqa: F401
+from ardupilot_msgs.srv._arm_motors import ArmMotors_Request  # noqa: F401
+from ardupilot_msgs.srv._arm_motors import ArmMotors_Response  # noqa: F401
+from ardupilot_msgs.srv._mode_switch import ModeSwitch  # noqa: F401
+from ardupilot_msgs.srv._mode_switch import ModeSwitch_Event  # noqa: F401
+from ardupilot_msgs.srv._mode_switch import ModeSwitch_Request  # noqa: F401
+from ardupilot_msgs.srv._mode_switch import ModeSwitch_Response  # noqa: F401

@@ -1,0 +1,15 @@
+{
+  "package_name": "ardupilot_msgs",
+  "output_dir": "/root/ros2_ws/build/ardupilot_msgs/rosidl_generator_type_description/ardupilot_msgs",
+  "idl_tuples": [
+    "/root/ros2_ws/build/ardupilot_msgs/rosidl_adapter/ardupilot_msgs:msg/GlobalPosition.idl",
+    "/root/ros2_ws/build/ardupilot_msgs/rosidl_adapter/ardupilot_msgs:srv/ArmMotors.idl",
+    "/root/ros2_ws/build/ardupilot_msgs/rosidl_adapter/ardupilot_msgs:srv/ModeSwitch.idl"
+  ],
+  "include_paths": [
+    "geometry_msgs:/opt/ros/rolling/share/geometry_msgs",
+    "std_msgs:/opt/ros/rolling/share/std_msgs",
+    "builtin_interfaces:/opt/ros/rolling/share/builtin_interfaces",
+    "service_msgs:/opt/ros/rolling/share/service_msgs"
+  ]
+}

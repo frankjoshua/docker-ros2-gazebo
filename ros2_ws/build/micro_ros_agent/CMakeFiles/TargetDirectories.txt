@@ -1,0 +1,4 @@
+/root/ros2_ws/build/micro_ros_agent/CMakeFiles/xrceagent.dir
+/root/ros2_ws/build/micro_ros_agent/CMakeFiles/micro_ros_agent.dir
+/root/ros2_ws/build/micro_ros_agent/CMakeFiles/edit_cache.dir
+/root/ros2_ws/build/micro_ros_agent/CMakeFiles/rebuild_cache.dir

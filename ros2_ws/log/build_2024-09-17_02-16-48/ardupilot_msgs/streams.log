@@ -1,0 +1,322 @@
+[0.024s] Invoking command in '/root/ros2_ws/build/ardupilot_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/rolling /usr/bin/cmake /root/ros2_ws/src/ardupilot/Tools/ros2/ardupilot_msgs -DBUILD_TESTING=ON -DCMAKE_INSTALL_PREFIX=/root/ros2_ws/install/ardupilot_msgs
+[0.163s] -- The C compiler identification is GNU 13.2.0
+[0.272s] -- The CXX compiler identification is GNU 13.2.0
+[0.292s] -- Detecting C compiler ABI info
+[0.422s] -- Detecting C compiler ABI info - done
+[0.441s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.441s] -- Detecting C compile features
+[0.442s] -- Detecting C compile features - done
+[0.458s] -- Detecting CXX compiler ABI info
+[0.637s] -- Detecting CXX compiler ABI info - done
+[0.671s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.672s] -- Detecting CXX compile features
+[0.673s] -- Detecting CXX compile features - done
+[0.684s] -- Found ament_cmake: 2.7.0 (/opt/ros/rolling/share/ament_cmake/cmake)
+[0.927s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.180s] -- Found geometry_msgs: 5.4.1 (/opt/ros/rolling/share/geometry_msgs/cmake)
+[1.293s] -- Found rosidl_generator_c: 4.8.1 (/opt/ros/rolling/share/rosidl_generator_c/cmake)
+[1.329s] -- Found rosidl_generator_cpp: 4.8.1 (/opt/ros/rolling/share/rosidl_generator_cpp/cmake)
+[1.370s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.413s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.517s] -- Found rosidl_default_generators: 1.7.1 (/opt/ros/rolling/share/rosidl_default_generators/cmake)
+[1.554s] -- Found rosidl_adapter: 4.8.1 (/opt/ros/rolling/share/rosidl_adapter/cmake)
+[2.584s] -- Found ament_cmake_cppcheck: 0.18.1 (/opt/ros/rolling/share/ament_cmake_cppcheck/cmake)
+[2.592s] -- Found ament_cmake_cpplint: 0.18.1 (/opt/ros/rolling/share/ament_cmake_cpplint/cmake)
+[2.600s] -- Found ament_cmake_uncrustify: 0.18.1 (/opt/ros/rolling/share/ament_cmake_uncrustify/cmake)
+[2.609s] -- Found ament_cmake_ros: 0.13.0 (/opt/ros/rolling/share/ament_cmake_ros/cmake)
+[3.921s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.405s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.415s] -- Found python_cmake_module: 0.12.0 (/opt/ros/rolling/share/python_cmake_module/cmake)
+[4.576s] -- Found PythonExtra: /usr/bin/python3  
+[5.119s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[5.211s] -- Found ament_cmake_flake8: 0.18.1 (/opt/ros/rolling/share/ament_cmake_flake8/cmake)
+[5.217s] -- Found ament_cmake_pep257: 0.18.1 (/opt/ros/rolling/share/ament_cmake_pep257/cmake)
+[5.224s] -- Found ament_lint_auto: 0.18.1 (/opt/ros/rolling/share/ament_lint_auto/cmake)
+[5.249s] -- Added test 'copyright' to check source files copyright and LICENSE
+[5.250s] -- Added test 'xmllint' to check XML markup files
+[5.255s] -- Configuring done (5.2s)
+[5.312s] -- Generating done (0.0s)
+[5.316s] -- Build files have been written to: /root/ros2_ws/build/ardupilot_msgs
+[5.329s] Invoked command in '/root/ros2_ws/build/ardupilot_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/rolling /usr/bin/cmake /root/ros2_ws/src/ardupilot/Tools/ros2/ardupilot_msgs -DBUILD_TESTING=ON -DCMAKE_INSTALL_PREFIX=/root/ros2_ws/install/ardupilot_msgs
+[5.330s] Invoking command in '/root/ros2_ws/build/ardupilot_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/rolling /usr/bin/cmake --build /root/ros2_ws/build/ardupilot_msgs -- -j12 -l12
+[5.393s] [  1%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[5.404s] [  1%] Built target ament_cmake_python_copy_ardupilot_msgs
+[5.689s] running egg_info
+[5.691s] creating ardupilot_msgs.egg-info
+[5.727s] writing ardupilot_msgs.egg-info/PKG-INFO
+[5.728s] writing dependency_links to ardupilot_msgs.egg-info/dependency_links.txt
+[5.728s] writing top-level names to ardupilot_msgs.egg-info/top_level.txt
+[5.736s] writing manifest file 'ardupilot_msgs.egg-info/SOURCES.txt'
+[5.834s] reading manifest file 'ardupilot_msgs.egg-info/SOURCES.txt'
+[5.835s] writing manifest file 'ardupilot_msgs.egg-info/SOURCES.txt'
+[5.889s] [  1%] Built target ament_cmake_python_build_ardupilot_msgs_egg
+[6.045s] [  1%] Built target ardupilot_msgs__rosidl_generator_type_description
+[6.061s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[6.076s] [  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[6.945s] [  5%] Built target ardupilot_msgs__cpp
+[7.151s] [  7%] [32mBuilding C object CMakeFiles/ardupilot_msgs__rosidl_generator_c.dir/rosidl_generator_c/ardupilot_msgs/msg/detail/global_position__type_support.c.o[0m
+[7.152s] [ 11%] [32mBuilding C object CMakeFiles/ardupilot_msgs__rosidl_generator_c.dir/rosidl_generator_c/ardupilot_msgs/msg/detail/global_position__functions.c.o[0m
+[7.154s] [ 14%] [32mBuilding C object CMakeFiles/ardupilot_msgs__rosidl_generator_c.dir/rosidl_generator_c/ardupilot_msgs/msg/detail/global_position__description.c.o[0m
+[7.155s] [ 14%] [32mBuilding C object CMakeFiles/ardupilot_msgs__rosidl_generator_c.dir/rosidl_generator_c/ardupilot_msgs/srv/detail/arm_motors__functions.c.o[0m
+[7.155s] [ 14%] [32mBuilding C object CMakeFiles/ardupilot_msgs__rosidl_generator_c.dir/rosidl_generator_c/ardupilot_msgs/srv/detail/arm_motors__description.c.o[0m
+[7.175s] [ 18%] [32mBuilding C object CMakeFiles/ardupilot_msgs__rosidl_generator_c.dir/rosidl_generator_c/ardupilot_msgs/srv/detail/arm_motors__type_support.c.o[0m
+[7.176s] [ 18%] [32mBuilding C object CMakeFiles/ardupilot_msgs__rosidl_generator_c.dir/rosidl_generator_c/ardupilot_msgs/srv/detail/mode_switch__description.c.o[0m
+[7.194s] [ 20%] [32mBuilding C object CMakeFiles/ardupilot_msgs__rosidl_generator_c.dir/rosidl_generator_c/ardupilot_msgs/srv/detail/mode_switch__functions.c.o[0m
+[7.195s] [ 22%] [32mBuilding C object CMakeFiles/ardupilot_msgs__rosidl_generator_c.dir/rosidl_generator_c/ardupilot_msgs/srv/detail/mode_switch__type_support.c.o[0m
+[7.447s] [ 24%] [32m[1mLinking C shared library libardupilot_msgs__rosidl_generator_c.so[0m
+[7.510s] [ 24%] Built target ardupilot_msgs__rosidl_generator_c
+[7.532s] [ 25%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[7.533s] [ 27%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[7.535s] [ 31%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[7.535s] [ 31%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[7.535s] [ 33%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[7.536s] [ 35%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[8.521s] [ 37%] [32mBuilding CXX object CMakeFiles/ardupilot_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ardupilot_msgs/msg/global_position__type_support.cpp.o[0m
+[8.523s] [ 40%] [32mBuilding CXX object CMakeFiles/ardupilot_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ardupilot_msgs/srv/arm_motors__type_support.cpp.o[0m
+[8.523s] [ 40%] [32mBuilding CXX object CMakeFiles/ardupilot_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ardupilot_msgs/srv/mode_switch__type_support.cpp.o[0m
+[9.169s] [ 42%] [32mBuilding CXX object CMakeFiles/ardupilot_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ardupilot_msgs/msg/global_position__type_support.cpp.o[0m
+[9.199s] [ 44%] [32mBuilding CXX object CMakeFiles/ardupilot_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ardupilot_msgs/srv/mode_switch__type_support.cpp.o[0m
+[9.206s] [ 46%] [32mBuilding CXX object CMakeFiles/ardupilot_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ardupilot_msgs/srv/arm_motors__type_support.cpp.o[0m
+[9.228s] [ 48%] [32mBuilding CXX object CMakeFiles/ardupilot_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ardupilot_msgs/msg/detail/global_position__type_support_c.cpp.o[0m
+[9.234s] [ 50%] [32mBuilding CXX object CMakeFiles/ardupilot_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ardupilot_msgs/srv/detail/arm_motors__type_support_c.cpp.o[0m
+[9.308s] [ 51%] [32mBuilding CXX object CMakeFiles/ardupilot_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ardupilot_msgs/msg/detail/dds_fastrtps/global_position__type_support.cpp.o[0m
+[9.340s] [ 53%] [32mBuilding CXX object CMakeFiles/ardupilot_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ardupilot_msgs/msg/detail/global_position__type_support.cpp.o[0m
+[9.352s] [ 55%] [32mBuilding CXX object CMakeFiles/ardupilot_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ardupilot_msgs/srv/detail/dds_fastrtps/arm_motors__type_support.cpp.o[0m
+[9.390s] [ 57%] [32mBuilding CXX object CMakeFiles/ardupilot_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ardupilot_msgs/srv/detail/arm_motors__type_support.cpp.o[0m
+[9.416s] [ 59%] [32mBuilding CXX object CMakeFiles/ardupilot_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ardupilot_msgs/srv/detail/dds_fastrtps/mode_switch__type_support.cpp.o[0m
+[9.430s] [ 61%] [32m[1mLinking CXX shared library libardupilot_msgs__rosidl_typesupport_c.so[0m
+[9.550s] [ 62%] [32mBuilding C object CMakeFiles/ardupilot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ardupilot_msgs/msg/detail/global_position__type_support.c.o[0m
+[9.766s] [ 62%] Built target ardupilot_msgs__rosidl_typesupport_c
+[9.801s] [ 64%] [32mBuilding C object CMakeFiles/ardupilot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ardupilot_msgs/srv/detail/arm_motors__type_support.c.o[0m
+[9.830s] [ 66%] [32mBuilding C object CMakeFiles/ardupilot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ardupilot_msgs/srv/detail/mode_switch__type_support.c.o[0m
+[9.995s] [ 68%] [32mBuilding CXX object CMakeFiles/ardupilot_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ardupilot_msgs/srv/detail/mode_switch__type_support.cpp.o[0m
+[10.054s] [ 70%] [32mBuilding CXX object CMakeFiles/ardupilot_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ardupilot_msgs/srv/detail/mode_switch__type_support_c.cpp.o[0m
+[10.084s] [ 72%] [32m[1mLinking C shared library libardupilot_msgs__rosidl_typesupport_introspection_c.so[0m
+[10.326s] [ 72%] Built target ardupilot_msgs__rosidl_typesupport_introspection_c
+[10.565s] [ 74%] [32m[1mLinking CXX shared library libardupilot_msgs__rosidl_typesupport_cpp.so[0m
+[10.837s] [ 74%] Built target ardupilot_msgs__rosidl_typesupport_cpp
+[11.837s] [ 75%] [32m[1mLinking CXX shared library libardupilot_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[12.009s] [ 75%] Built target ardupilot_msgs__rosidl_typesupport_introspection_cpp
+[12.044s] [ 77%] [32m[1mLinking CXX shared library libardupilot_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[12.150s] [ 79%] [32m[1mLinking CXX shared library libardupilot_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[12.292s] [ 79%] Built target ardupilot_msgs__rosidl_typesupport_fastrtps_cpp
+[12.301s] [ 79%] Built target ardupilot_msgs__rosidl_typesupport_fastrtps_c
+[12.412s] [ 79%] Built target ardupilot_msgs
+[12.495s] [ 81%] [34m[1mGenerating Python code for ROS interfaces[0m
+[15.777s] [ 81%] Built target ardupilot_msgs__py
+[15.822s] [ 83%] [32mBuilding C object CMakeFiles/ardupilot_msgs__rosidl_generator_py.dir/rosidl_generator_py/ardupilot_msgs/srv/_mode_switch_s.c.o[0m
+[15.826s] [ 85%] [32mBuilding C object CMakeFiles/ardupilot_msgs__rosidl_generator_py.dir/rosidl_generator_py/ardupilot_msgs/srv/_arm_motors_s.c.o[0m
+[15.826s] [ 87%] [32mBuilding C object CMakeFiles/ardupilot_msgs__rosidl_generator_py.dir/rosidl_generator_py/ardupilot_msgs/msg/_global_position_s.c.o[0m
+[16.342s] [ 88%] [32m[1mLinking C shared library libardupilot_msgs__rosidl_generator_py.so[0m
+[16.425s] [ 88%] Built target ardupilot_msgs__rosidl_generator_py
+[16.458s] [ 92%] [32mBuilding C object CMakeFiles/ardupilot_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/ardupilot_msgs/_ardupilot_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[16.459s] [ 92%] [32mBuilding C object CMakeFiles/ardupilot_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/ardupilot_msgs/_ardupilot_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[16.469s] [ 94%] [32mBuilding C object CMakeFiles/ardupilot_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/ardupilot_msgs/_ardupilot_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[16.712s] [ 96%] [32m[1mLinking C shared module rosidl_generator_py/ardupilot_msgs/ardupilot_msgs_s__rosidl_typesupport_c.so[0m
+[16.761s] [ 96%] Built target ardupilot_msgs_s__rosidl_typesupport_c
+[16.851s] [ 98%] [32m[1mLinking C shared module rosidl_generator_py/ardupilot_msgs/ardupilot_msgs_s__rosidl_typesupport_fastrtps_c.so[0m
+[16.860s] [100%] [32m[1mLinking C shared module rosidl_generator_py/ardupilot_msgs/ardupilot_msgs_s__rosidl_typesupport_introspection_c.so[0m
+[16.910s] [100%] Built target ardupilot_msgs_s__rosidl_typesupport_fastrtps_c
+[16.915s] [100%] Built target ardupilot_msgs_s__rosidl_typesupport_introspection_c
+[16.935s] Invoked command in '/root/ros2_ws/build/ardupilot_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/rolling /usr/bin/cmake --build /root/ros2_ws/build/ardupilot_msgs -- -j12 -l12
+[17.095s] Invoking command in '/root/ros2_ws/build/ardupilot_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/rolling /usr/bin/cmake --install /root/ros2_ws/build/ardupilot_msgs
+[17.110s] -- Install configuration: ""
+[17.110s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ament_index/resource_index/rosidl_interfaces/ardupilot_msgs
+[17.110s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/msg/GlobalPosition.json
+[17.111s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/srv/ArmMotors.json
+[17.111s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/srv/ModeSwitch.json
+[17.111s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs
+[17.111s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv
+[17.112s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/mode_switch.h
+[17.112s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail
+[17.112s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail/arm_motors__type_support.h
+[17.112s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail/arm_motors__functions.c
+[17.113s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail/mode_switch__description.c
+[17.113s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail/arm_motors__functions.h
+[17.113s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail/mode_switch__type_support.c
+[17.114s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail/arm_motors__description.c
+[17.114s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail/mode_switch__type_support.h
+[17.114s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail/mode_switch__functions.c
+[17.114s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail/mode_switch__struct.h
+[17.115s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail/mode_switch__functions.h
+[17.115s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail/arm_motors__struct.h
+[17.115s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail/arm_motors__type_support.c
+[17.116s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/arm_motors.h
+[17.116s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg
+[17.116s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg/rosidl_generator_c__visibility_control.h
+[17.116s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg/global_position.h
+[17.117s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg/detail
+[17.117s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg/detail/global_position__description.c
+[17.117s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg/detail/global_position__functions.h
+[17.117s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg/detail/global_position__struct.h
+[17.118s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg/detail/global_position__functions.c
+[17.118s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg/detail/global_position__type_support.h
+[17.118s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg/detail/global_position__type_support.c
+[17.119s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/environment/library_path.sh
+[17.119s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/environment/library_path.dsv
+[17.119s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/libardupilot_msgs__rosidl_generator_c.so
+[17.120s] -- Set non-toolchain portion of runtime path of "/root/ros2_ws/install/ardupilot_msgs/lib/libardupilot_msgs__rosidl_generator_c.so" to ""
+[17.120s] -- Up-to-date: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs
+[17.120s] -- Up-to-date: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv
+[17.120s] -- Up-to-date: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail
+[17.121s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail/arm_motors__rosidl_typesupport_fastrtps_c.h
+[17.121s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail/mode_switch__rosidl_typesupport_fastrtps_c.h
+[17.121s] -- Up-to-date: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg
+[17.122s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[17.122s] -- Up-to-date: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg/detail
+[17.122s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg/detail/global_position__rosidl_typesupport_fastrtps_c.h
+[17.122s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/libardupilot_msgs__rosidl_typesupport_fastrtps_c.so
+[17.123s] -- Set non-toolchain portion of runtime path of "/root/ros2_ws/install/ardupilot_msgs/lib/libardupilot_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[17.123s] -- Up-to-date: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs
+[17.123s] -- Up-to-date: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv
+[17.123s] -- Up-to-date: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail
+[17.124s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail/arm_motors__traits.hpp
+[17.124s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail/mode_switch__type_support.hpp
+[17.124s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail/arm_motors__struct.hpp
+[17.124s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail/mode_switch__traits.hpp
+[17.125s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail/arm_motors__builder.hpp
+[17.125s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail/arm_motors__type_support.hpp
+[17.125s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail/mode_switch__struct.hpp
+[17.126s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail/mode_switch__builder.hpp
+[17.126s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/arm_motors.hpp
+[17.126s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/mode_switch.hpp
+[17.126s] -- Up-to-date: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg
+[17.127s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[17.127s] -- Up-to-date: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg/detail
+[17.127s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg/detail/global_position__builder.hpp
+[17.128s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg/detail/global_position__struct.hpp
+[17.128s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg/detail/global_position__traits.hpp
+[17.128s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg/detail/global_position__type_support.hpp
+[17.128s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg/global_position.hpp
+[17.129s] -- Up-to-date: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs
+[17.129s] -- Up-to-date: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv
+[17.129s] -- Up-to-date: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail
+[17.129s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail/mode_switch__rosidl_typesupport_fastrtps_cpp.hpp
+[17.130s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail/arm_motors__rosidl_typesupport_fastrtps_cpp.hpp
+[17.130s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail/dds_fastrtps
+[17.130s] -- Up-to-date: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg
+[17.130s] -- Up-to-date: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg/detail
+[17.131s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg/detail/global_position__rosidl_typesupport_fastrtps_cpp.hpp
+[17.131s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg/detail/dds_fastrtps
+[17.131s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[17.131s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/libardupilot_msgs__rosidl_typesupport_fastrtps_cpp.so
+[17.132s] -- Set non-toolchain portion of runtime path of "/root/ros2_ws/install/ardupilot_msgs/lib/libardupilot_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[17.132s] -- Up-to-date: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs
+[17.132s] -- Up-to-date: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv
+[17.132s] -- Up-to-date: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail
+[17.133s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail/mode_switch__type_support.c
+[17.133s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail/mode_switch__rosidl_typesupport_introspection_c.h
+[17.133s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail/arm_motors__rosidl_typesupport_introspection_c.h
+[17.134s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail/arm_motors__type_support.c
+[17.134s] -- Up-to-date: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg
+[17.134s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[17.134s] -- Up-to-date: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg/detail
+[17.135s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg/detail/global_position__rosidl_typesupport_introspection_c.h
+[17.135s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg/detail/global_position__type_support.c
+[17.135s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/libardupilot_msgs__rosidl_typesupport_introspection_c.so
+[17.135s] -- Set non-toolchain portion of runtime path of "/root/ros2_ws/install/ardupilot_msgs/lib/libardupilot_msgs__rosidl_typesupport_introspection_c.so" to ""
+[17.136s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/libardupilot_msgs__rosidl_typesupport_c.so
+[17.136s] -- Set non-toolchain portion of runtime path of "/root/ros2_ws/install/ardupilot_msgs/lib/libardupilot_msgs__rosidl_typesupport_c.so" to ""
+[17.136s] -- Up-to-date: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs
+[17.136s] -- Up-to-date: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv
+[17.137s] -- Up-to-date: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail
+[17.137s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail/arm_motors__type_support.cpp
+[17.137s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail/mode_switch__rosidl_typesupport_introspection_cpp.hpp
+[17.137s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail/mode_switch__type_support.cpp
+[17.137s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail/arm_motors__rosidl_typesupport_introspection_cpp.hpp
+[17.138s] -- Up-to-date: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg
+[17.138s] -- Up-to-date: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg/detail
+[17.138s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg/detail/global_position__type_support.cpp
+[17.138s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg/detail/global_position__rosidl_typesupport_introspection_cpp.hpp
+[17.139s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/libardupilot_msgs__rosidl_typesupport_introspection_cpp.so
+[17.139s] -- Set non-toolchain portion of runtime path of "/root/ros2_ws/install/ardupilot_msgs/lib/libardupilot_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[17.139s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/libardupilot_msgs__rosidl_typesupport_cpp.so
+[17.139s] -- Set non-toolchain portion of runtime path of "/root/ros2_ws/install/ardupilot_msgs/lib/libardupilot_msgs__rosidl_typesupport_cpp.so" to ""
+[17.140s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/environment/pythonpath.sh
+[17.140s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/environment/pythonpath.dsv
+[17.140s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs-0.0.0-py3.12.egg-info
+[17.140s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs-0.0.0-py3.12.egg-info/top_level.txt
+[17.140s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs-0.0.0-py3.12.egg-info/dependency_links.txt
+[17.141s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs-0.0.0-py3.12.egg-info/PKG-INFO
+[17.141s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs-0.0.0-py3.12.egg-info/SOURCES.txt
+[17.141s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs
+[17.141s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs/ardupilot_msgs_s__rosidl_typesupport_fastrtps_c.so
+[17.141s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs/_ardupilot_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[17.142s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs/_ardupilot_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[17.142s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs/srv
+[17.142s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs/srv/_mode_switch.py
+[17.142s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs/srv/_arm_motors.py
+[17.143s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs/srv/_mode_switch_s.c
+[17.143s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs/srv/__init__.py
+[17.143s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs/srv/_arm_motors_s.c
+[17.143s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs/ardupilot_msgs_s__rosidl_typesupport_c.so
+[17.143s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs/_ardupilot_msgs_s.ep.rosidl_typesupport_c.c
+[17.144s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs/msg
+[17.144s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs/msg/_global_position.py
+[17.144s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs/msg/__init__.py
+[17.144s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs/msg/_global_position_s.c
+[17.145s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs/ardupilot_msgs_s__rosidl_typesupport_introspection_c.so
+[17.145s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs/__init__.py
+[17.223s] Listing '/root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs'...
+[17.223s] Compiling '/root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs/__init__.py'...
+[17.223s] Listing '/root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs/msg'...
+[17.224s] Compiling '/root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs/msg/__init__.py'...
+[17.224s] Compiling '/root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs/msg/_global_position.py'...
+[17.224s] Listing '/root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs/srv'...
+[17.224s] Compiling '/root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs/srv/__init__.py'...
+[17.225s] Compiling '/root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs/srv/_arm_motors.py'...
+[17.225s] Compiling '/root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs/srv/_mode_switch.py'...
+[17.235s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs/ardupilot_msgs_s__rosidl_typesupport_fastrtps_c.so
+[17.235s] -- Set non-toolchain portion of runtime path of "/root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs/ardupilot_msgs_s__rosidl_typesupport_fastrtps_c.so" to ""
+[17.235s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs/ardupilot_msgs_s__rosidl_typesupport_introspection_c.so
+[17.236s] -- Set non-toolchain portion of runtime path of "/root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs/ardupilot_msgs_s__rosidl_typesupport_introspection_c.so" to ""
+[17.236s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs/ardupilot_msgs_s__rosidl_typesupport_c.so
+[17.236s] -- Set non-toolchain portion of runtime path of "/root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs/ardupilot_msgs_s__rosidl_typesupport_c.so" to ""
+[17.236s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/libardupilot_msgs__rosidl_generator_py.so
+[17.237s] -- Set non-toolchain portion of runtime path of "/root/ros2_ws/install/ardupilot_msgs/lib/libardupilot_msgs__rosidl_generator_py.so" to ""
+[17.237s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/msg/GlobalPosition.idl
+[17.237s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/srv/ArmMotors.idl
+[17.238s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/srv/ModeSwitch.idl
+[17.238s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/msg/GlobalPosition.msg
+[17.238s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/srv/ArmMotors.srv
+[17.238s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/srv/ModeSwitch.srv
+[17.239s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ament_index/resource_index/package_run_dependencies/ardupilot_msgs
+[17.239s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ament_index/resource_index/parent_prefix_path/ardupilot_msgs
+[17.239s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/environment/ament_prefix_path.sh
+[17.239s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/environment/ament_prefix_path.dsv
+[17.240s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/environment/path.sh
+[17.240s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/environment/path.dsv
+[17.240s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/local_setup.bash
+[17.241s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/local_setup.sh
+[17.241s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/local_setup.zsh
+[17.241s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/local_setup.dsv
+[17.241s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/package.dsv
+[17.242s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ament_index/resource_index/packages/ardupilot_msgs
+[17.242s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/cmake/export_ardupilot_msgs__rosidl_generator_cExport.cmake
+[17.242s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/cmake/export_ardupilot_msgs__rosidl_generator_cExport-noconfig.cmake
+[17.242s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/cmake/export_ardupilot_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[17.243s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/cmake/export_ardupilot_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[17.243s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/cmake/export_ardupilot_msgs__rosidl_generator_cppExport.cmake
+[17.243s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/cmake/export_ardupilot_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[17.244s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/cmake/export_ardupilot_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[17.244s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/cmake/ardupilot_msgs__rosidl_typesupport_introspection_cExport.cmake
+[17.244s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/cmake/ardupilot_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[17.244s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/cmake/ardupilot_msgs__rosidl_typesupport_cExport.cmake
+[17.245s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/cmake/ardupilot_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[17.245s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/cmake/ardupilot_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[17.245s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/cmake/ardupilot_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[17.246s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/cmake/ardupilot_msgs__rosidl_typesupport_cppExport.cmake
+[17.246s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/cmake/ardupilot_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[17.246s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/cmake/export_ardupilot_msgs__rosidl_generator_pyExport.cmake
+[17.246s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/cmake/export_ardupilot_msgs__rosidl_generator_pyExport-noconfig.cmake
+[17.247s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/cmake/rosidl_cmake-extras.cmake
+[17.247s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[17.247s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[17.247s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[17.247s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[17.248s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[17.248s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[17.248s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/cmake/ardupilot_msgsConfig.cmake
+[17.248s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/cmake/ardupilot_msgsConfig-version.cmake
+[17.249s] -- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/package.xml
+[17.250s] Invoked command in '/root/ros2_ws/build/ardupilot_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/rolling /usr/bin/cmake --install /root/ros2_ws/build/ardupilot_msgs

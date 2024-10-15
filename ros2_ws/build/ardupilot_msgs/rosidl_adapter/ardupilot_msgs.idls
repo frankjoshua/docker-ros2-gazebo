@@ -1,0 +1,3 @@
+/root/ros2_ws/build/ardupilot_msgs/rosidl_adapter/ardupilot_msgs:msg/GlobalPosition.idl
+/root/ros2_ws/build/ardupilot_msgs/rosidl_adapter/ardupilot_msgs:srv/ArmMotors.idl
+/root/ros2_ws/build/ardupilot_msgs/rosidl_adapter/ardupilot_msgs:srv/ModeSwitch.idl

@@ -1,0 +1,4 @@
+Invoking command in '/root/ros2_ws/build/micro_ros_agent': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/rolling /usr/bin/cmake /root/ros2_ws/src/micro_ros_agent/micro_ros_agent -DBUILD_TESTING=ON -DCMAKE_INSTALL_PREFIX=/root/ros2_ws/install/micro_ros_agent
+Invoked command in '/root/ros2_ws/build/micro_ros_agent' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/rolling /usr/bin/cmake /root/ros2_ws/src/micro_ros_agent/micro_ros_agent -DBUILD_TESTING=ON -DCMAKE_INSTALL_PREFIX=/root/ros2_ws/install/micro_ros_agent
+Invoking command in '/root/ros2_ws/build/micro_ros_agent': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/rolling /usr/bin/cmake --build /root/ros2_ws/build/micro_ros_agent -- -j12 -l12
+Invoked command in '/root/ros2_ws/build/micro_ros_agent' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/rolling /usr/bin/cmake --build /root/ros2_ws/build/micro_ros_agent -- -j12 -l12

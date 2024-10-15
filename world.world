@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <world name="simple_park">
+<include>
+<uri>
+https://fuel.gazebosim.org/1.0/OpenRobotics/models/VRC Grass Plane 2
+</uri>
+</include>
+  </world>
+</sdf>

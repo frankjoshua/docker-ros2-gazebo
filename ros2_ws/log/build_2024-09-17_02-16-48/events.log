@@ -1,0 +1,905 @@
+[0.000000] (-) TimerEvent: {}
+[0.000612] (ardupilot_msgs) JobQueued: {'identifier': 'ardupilot_msgs', 'dependencies': OrderedDict()}
+[0.001225] (example_pkg) JobQueued: {'identifier': 'example_pkg', 'dependencies': OrderedDict()}
+[0.001285] (micro_ros_agent) JobQueued: {'identifier': 'micro_ros_agent', 'dependencies': OrderedDict()}
+[0.001329] (ardupilot_sitl) JobQueued: {'identifier': 'ardupilot_sitl', 'dependencies': OrderedDict({'ardupilot_msgs': '/root/ros2_ws/install/ardupilot_msgs', 'micro_ros_agent': '/root/ros2_ws/install/micro_ros_agent'})}
+[0.001376] (ardupilot_dds_tests) JobQueued: {'identifier': 'ardupilot_dds_tests', 'dependencies': OrderedDict({'ardupilot_msgs': '/root/ros2_ws/install/ardupilot_msgs', 'micro_ros_agent': '/root/ros2_ws/install/micro_ros_agent', 'ardupilot_sitl': '/root/ros2_ws/install/ardupilot_sitl'})}
+[0.001421] (ardupilot_msgs) JobStarted: {'identifier': 'ardupilot_msgs'}
+[0.010678] (micro_ros_agent) JobStarted: {'identifier': 'micro_ros_agent'}
+[0.014691] (example_pkg) JobStarted: {'identifier': 'example_pkg'}
+[0.023086] (ardupilot_msgs) JobProgress: {'identifier': 'ardupilot_msgs', 'progress': 'cmake'}
+[0.023498] (ardupilot_msgs) Command: {'cmd': ['/usr/bin/cmake', '/root/ros2_ws/src/ardupilot/Tools/ros2/ardupilot_msgs', '-DBUILD_TESTING=ON', '-DCMAKE_INSTALL_PREFIX=/root/ros2_ws/install/ardupilot_msgs'], 'cwd': '/root/ros2_ws/build/ardupilot_msgs', 'env': OrderedDict({'GZ_CONFIG_PATH': '/opt/ros/rolling/opt/gz_launch_vendor/share/gz:/opt/ros/rolling/opt/gz_sim_vendor/share/gz:/opt/ros/rolling/opt/sdformat_vendor/share/gz:/opt/ros/rolling/opt/gz_gui_vendor/share/gz:/opt/ros/rolling/opt/gz_transport_vendor/share/gz:/opt/ros/rolling/opt/gz_rendering_vendor/share/gz:/opt/ros/rolling/opt/gz_plugin_vendor/share/gz:/opt/ros/rolling/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/rolling/opt/gz_msgs_vendor/share/gz:/opt/ros/rolling/opt/gz_common_vendor/share/gz', 'HOSTNAME': 'josh-laptop', 'GIT_ASKPASS': '/vscode/vscode-server/bin/linux-x64/38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/rolling/opt/gz_launch_vendor/lib:/opt/ros/rolling/opt/gz_sim_vendor/lib:/opt/ros/rolling/opt/gz_sensors_vendor/lib:/opt/ros/rolling/opt/gz_physics_vendor/lib:/opt/ros/rolling/opt/sdformat_vendor/lib:/opt/ros/rolling/lib/x86_64-linux-gnu:/opt/ros/rolling/opt/gz_gui_vendor/lib:/opt/ros/rolling/opt/gz_transport_vendor/lib:/opt/ros/rolling/opt/gz_rendering_vendor/lib:/opt/ros/rolling/opt/gz_plugin_vendor/lib:/opt/ros/rolling/opt/gz_fuel_tools_vendor/lib:/opt/ros/rolling/opt/gz_msgs_vendor/lib:/opt/ros/rolling/opt/gz_common_vendor/lib:/opt/ros/rolling/opt/gz_math_vendor/lib:/opt/ros/rolling/opt/gz_utils_vendor/lib:/opt/ros/rolling/opt/gz_tools_vendor/lib:/opt/ros/rolling/opt/gz_ogre_next_vendor/lib:/opt/ros/rolling/opt/gz_dartsim_vendor/lib:/opt/ros/rolling/opt/gz_cmake_vendor/lib:/opt/ros/rolling/lib', 'BROWSER': '/vscode/vscode-server/bin/linux-x64/38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/bin/helpers/browser.sh', 'HOME': '/root', 'OLDPWD': '/root/ros2_ws/src', 'TERM_PROGRAM_VERSION': '1.93.1', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-49ea7657-e884-471b-baa9-33a0090204a7.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/vscode/vscode-server/bin/linux-x64/38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/vscode/vscode-server/bin/linux-x64/38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/node', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'ROS_DISTRO': 'rolling', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-2f77408d-856a-497a-b5f0-dfcdfe8de5e6.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/vscode/vscode-server/bin/linux-x64/38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/bin/remote-cli:/opt/ros/rolling/opt/gz_msgs_vendor/bin:/opt/ros/rolling/opt/gz_tools_vendor/bin:/opt/ros/rolling/opt/gz_ogre_next_vendor/bin:/opt/ros/rolling/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'REMOTE_CONTAINERS_SOCKETS': '["/tmp/vscode-ssh-auth-2f77408d-856a-497a-b5f0-dfcdfe8de5e6.sock","/root/.gnupg/S.gpg-agent"]', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/vscode-git-678230d0c7.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/tmp/vscode-ssh-auth-2f77408d-856a-497a-b5f0-dfcdfe8de5e6.sock', 'AMENT_PREFIX_PATH': '/opt/ros/rolling', 'DEBIAN_FRONTEND': 'dialog', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/root/ros2_ws/build/ardupilot_msgs', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/opt/ros/rolling/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/rolling/opt/gz_launch_vendor:/opt/ros/rolling/opt/gz_sim_vendor:/opt/ros/rolling/opt/gz_sensors_vendor:/opt/ros/rolling/opt/gz_physics_vendor:/opt/ros/rolling/opt/sdformat_vendor:/opt/ros/rolling/opt/gz_gui_vendor:/opt/ros/rolling/opt/gz_transport_vendor:/opt/ros/rolling/opt/gz_rendering_vendor:/opt/ros/rolling/opt/gz_plugin_vendor:/opt/ros/rolling/opt/gz_fuel_tools_vendor:/opt/ros/rolling/opt/gz_msgs_vendor:/opt/ros/rolling/opt/gz_common_vendor:/opt/ros/rolling/opt/gz_math_vendor:/opt/ros/rolling/opt/gz_utils_vendor:/opt/ros/rolling/opt/gz_tools_vendor:/opt/ros/rolling/opt/gz_ogre_next_vendor:/opt/ros/rolling/opt/gz_dartsim_vendor:/opt/ros/rolling/opt/gz_cmake_vendor:/opt/ros/rolling'}), 'shell': False}
+[0.026766] (micro_ros_agent) JobProgress: {'identifier': 'micro_ros_agent', 'progress': 'cmake'}
+[0.027000] (micro_ros_agent) Command: {'cmd': ['/usr/bin/cmake', '/root/ros2_ws/src/micro_ros_agent/micro_ros_agent', '-DBUILD_TESTING=ON', '-DCMAKE_INSTALL_PREFIX=/root/ros2_ws/install/micro_ros_agent'], 'cwd': '/root/ros2_ws/build/micro_ros_agent', 'env': OrderedDict({'GZ_CONFIG_PATH': '/opt/ros/rolling/opt/gz_launch_vendor/share/gz:/opt/ros/rolling/opt/gz_sim_vendor/share/gz:/opt/ros/rolling/opt/sdformat_vendor/share/gz:/opt/ros/rolling/opt/gz_gui_vendor/share/gz:/opt/ros/rolling/opt/gz_transport_vendor/share/gz:/opt/ros/rolling/opt/gz_rendering_vendor/share/gz:/opt/ros/rolling/opt/gz_plugin_vendor/share/gz:/opt/ros/rolling/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/rolling/opt/gz_msgs_vendor/share/gz:/opt/ros/rolling/opt/gz_common_vendor/share/gz', 'HOSTNAME': 'josh-laptop', 'GIT_ASKPASS': '/vscode/vscode-server/bin/linux-x64/38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/rolling/opt/gz_launch_vendor/lib:/opt/ros/rolling/opt/gz_sim_vendor/lib:/opt/ros/rolling/opt/gz_sensors_vendor/lib:/opt/ros/rolling/opt/gz_physics_vendor/lib:/opt/ros/rolling/opt/sdformat_vendor/lib:/opt/ros/rolling/lib/x86_64-linux-gnu:/opt/ros/rolling/opt/gz_gui_vendor/lib:/opt/ros/rolling/opt/gz_transport_vendor/lib:/opt/ros/rolling/opt/gz_rendering_vendor/lib:/opt/ros/rolling/opt/gz_plugin_vendor/lib:/opt/ros/rolling/opt/gz_fuel_tools_vendor/lib:/opt/ros/rolling/opt/gz_msgs_vendor/lib:/opt/ros/rolling/opt/gz_common_vendor/lib:/opt/ros/rolling/opt/gz_math_vendor/lib:/opt/ros/rolling/opt/gz_utils_vendor/lib:/opt/ros/rolling/opt/gz_tools_vendor/lib:/opt/ros/rolling/opt/gz_ogre_next_vendor/lib:/opt/ros/rolling/opt/gz_dartsim_vendor/lib:/opt/ros/rolling/opt/gz_cmake_vendor/lib:/opt/ros/rolling/lib', 'BROWSER': '/vscode/vscode-server/bin/linux-x64/38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/bin/helpers/browser.sh', 'HOME': '/root', 'OLDPWD': '/root/ros2_ws/src', 'TERM_PROGRAM_VERSION': '1.93.1', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-49ea7657-e884-471b-baa9-33a0090204a7.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/vscode/vscode-server/bin/linux-x64/38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/vscode/vscode-server/bin/linux-x64/38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/node', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'ROS_DISTRO': 'rolling', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-2f77408d-856a-497a-b5f0-dfcdfe8de5e6.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/vscode/vscode-server/bin/linux-x64/38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/bin/remote-cli:/opt/ros/rolling/opt/gz_msgs_vendor/bin:/opt/ros/rolling/opt/gz_tools_vendor/bin:/opt/ros/rolling/opt/gz_ogre_next_vendor/bin:/opt/ros/rolling/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'REMOTE_CONTAINERS_SOCKETS': '["/tmp/vscode-ssh-auth-2f77408d-856a-497a-b5f0-dfcdfe8de5e6.sock","/root/.gnupg/S.gpg-agent"]', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/vscode-git-678230d0c7.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/tmp/vscode-ssh-auth-2f77408d-856a-497a-b5f0-dfcdfe8de5e6.sock', 'AMENT_PREFIX_PATH': '/opt/ros/rolling', 'DEBIAN_FRONTEND': 'dialog', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/root/ros2_ws/build/micro_ros_agent', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/opt/ros/rolling/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/rolling/opt/gz_launch_vendor:/opt/ros/rolling/opt/gz_sim_vendor:/opt/ros/rolling/opt/gz_sensors_vendor:/opt/ros/rolling/opt/gz_physics_vendor:/opt/ros/rolling/opt/sdformat_vendor:/opt/ros/rolling/opt/gz_gui_vendor:/opt/ros/rolling/opt/gz_transport_vendor:/opt/ros/rolling/opt/gz_rendering_vendor:/opt/ros/rolling/opt/gz_plugin_vendor:/opt/ros/rolling/opt/gz_fuel_tools_vendor:/opt/ros/rolling/opt/gz_msgs_vendor:/opt/ros/rolling/opt/gz_common_vendor:/opt/ros/rolling/opt/gz_math_vendor:/opt/ros/rolling/opt/gz_utils_vendor:/opt/ros/rolling/opt/gz_tools_vendor:/opt/ros/rolling/opt/gz_ogre_next_vendor:/opt/ros/rolling/opt/gz_dartsim_vendor:/opt/ros/rolling/opt/gz_cmake_vendor:/opt/ros/rolling'}), 'shell': False}
+[0.099978] (-) TimerEvent: {}
+[0.164105] (micro_ros_agent) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.2.0\n'}
+[0.164426] (ardupilot_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.2.0\n'}
+[0.187454] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.200090] (-) TimerEvent: {}
+[0.272814] (ardupilot_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.2.0\n'}
+[0.292745] (ardupilot_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.300199] (-) TimerEvent: {}
+[0.310803] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.328426] (micro_ros_agent) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.328981] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.329773] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.400403] (-) TimerEvent: {}
+[0.415582] (micro_ros_agent) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.2.0\n'}
+[0.422882] (ardupilot_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.440497] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.442142] (ardupilot_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.442641] (ardupilot_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.443458] (ardupilot_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.459273] (ardupilot_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.500496] (-) TimerEvent: {}
+[0.600906] (-) TimerEvent: {}
+[0.610988] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.631173] (micro_ros_agent) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.631598] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.632502] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.638017] (ardupilot_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.672235] (ardupilot_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.672935] (ardupilot_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.674445] (ardupilot_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.685618] (ardupilot_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 2.7.0 (/opt/ros/rolling/share/ament_cmake/cmake)\n'}
+[0.701008] (-) TimerEvent: {}
+[0.706634] (micro_ros_agent) StdoutLine: {'line': b'-- Configuring done (0.7s)\n'}
+[0.713133] (micro_ros_agent) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[0.713986] (micro_ros_agent) StderrLine: {'line': b'\x1b[33mCMake Warning:\n'}
+[0.714375] (micro_ros_agent) StderrLine: {'line': b'  Manually-specified variables were not used by the project:\n'}
+[0.714711] (micro_ros_agent) StderrLine: {'line': b'\n'}
+[0.714975] (micro_ros_agent) StderrLine: {'line': b'    BUILD_TESTING\n'}
+[0.715283] (micro_ros_agent) StderrLine: {'line': b'\n'}
+[0.715523] (micro_ros_agent) StderrLine: {'line': b'\x1b[0m\n'}
+[0.715759] (micro_ros_agent) StdoutLine: {'line': b'-- Build files have been written to: /root/ros2_ws/build/micro_ros_agent\n'}
+[0.721275] (micro_ros_agent) CommandEnded: {'returncode': 0}
+[0.722153] (micro_ros_agent) JobProgress: {'identifier': 'micro_ros_agent', 'progress': 'build'}
+[0.724016] (micro_ros_agent) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/ros2_ws/build/micro_ros_agent', '--', '-j12', '-l12'], 'cwd': '/root/ros2_ws/build/micro_ros_agent', 'env': OrderedDict({'GZ_CONFIG_PATH': '/opt/ros/rolling/opt/gz_launch_vendor/share/gz:/opt/ros/rolling/opt/gz_sim_vendor/share/gz:/opt/ros/rolling/opt/sdformat_vendor/share/gz:/opt/ros/rolling/opt/gz_gui_vendor/share/gz:/opt/ros/rolling/opt/gz_transport_vendor/share/gz:/opt/ros/rolling/opt/gz_rendering_vendor/share/gz:/opt/ros/rolling/opt/gz_plugin_vendor/share/gz:/opt/ros/rolling/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/rolling/opt/gz_msgs_vendor/share/gz:/opt/ros/rolling/opt/gz_common_vendor/share/gz', 'HOSTNAME': 'josh-laptop', 'GIT_ASKPASS': '/vscode/vscode-server/bin/linux-x64/38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/rolling/opt/gz_launch_vendor/lib:/opt/ros/rolling/opt/gz_sim_vendor/lib:/opt/ros/rolling/opt/gz_sensors_vendor/lib:/opt/ros/rolling/opt/gz_physics_vendor/lib:/opt/ros/rolling/opt/sdformat_vendor/lib:/opt/ros/rolling/lib/x86_64-linux-gnu:/opt/ros/rolling/opt/gz_gui_vendor/lib:/opt/ros/rolling/opt/gz_transport_vendor/lib:/opt/ros/rolling/opt/gz_rendering_vendor/lib:/opt/ros/rolling/opt/gz_plugin_vendor/lib:/opt/ros/rolling/opt/gz_fuel_tools_vendor/lib:/opt/ros/rolling/opt/gz_msgs_vendor/lib:/opt/ros/rolling/opt/gz_common_vendor/lib:/opt/ros/rolling/opt/gz_math_vendor/lib:/opt/ros/rolling/opt/gz_utils_vendor/lib:/opt/ros/rolling/opt/gz_tools_vendor/lib:/opt/ros/rolling/opt/gz_ogre_next_vendor/lib:/opt/ros/rolling/opt/gz_dartsim_vendor/lib:/opt/ros/rolling/opt/gz_cmake_vendor/lib:/opt/ros/rolling/lib', 'BROWSER': '/vscode/vscode-server/bin/linux-x64/38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/bin/helpers/browser.sh', 'HOME': '/root', 'OLDPWD': '/root/ros2_ws/src', 'TERM_PROGRAM_VERSION': '1.93.1', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-49ea7657-e884-471b-baa9-33a0090204a7.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/vscode/vscode-server/bin/linux-x64/38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/vscode/vscode-server/bin/linux-x64/38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/node', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'ROS_DISTRO': 'rolling', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-2f77408d-856a-497a-b5f0-dfcdfe8de5e6.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/vscode/vscode-server/bin/linux-x64/38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/bin/remote-cli:/opt/ros/rolling/opt/gz_msgs_vendor/bin:/opt/ros/rolling/opt/gz_tools_vendor/bin:/opt/ros/rolling/opt/gz_ogre_next_vendor/bin:/opt/ros/rolling/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'REMOTE_CONTAINERS_SOCKETS': '["/tmp/vscode-ssh-auth-2f77408d-856a-497a-b5f0-dfcdfe8de5e6.sock","/root/.gnupg/S.gpg-agent"]', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/vscode-git-678230d0c7.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/tmp/vscode-ssh-auth-2f77408d-856a-497a-b5f0-dfcdfe8de5e6.sock', 'AMENT_PREFIX_PATH': '/opt/ros/rolling', 'DEBIAN_FRONTEND': 'dialog', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/root/ros2_ws/build/micro_ros_agent', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/opt/ros/rolling/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/rolling/opt/gz_launch_vendor:/opt/ros/rolling/opt/gz_sim_vendor:/opt/ros/rolling/opt/gz_sensors_vendor:/opt/ros/rolling/opt/gz_physics_vendor:/opt/ros/rolling/opt/sdformat_vendor:/opt/ros/rolling/opt/gz_gui_vendor:/opt/ros/rolling/opt/gz_transport_vendor:/opt/ros/rolling/opt/gz_rendering_vendor:/opt/ros/rolling/opt/gz_plugin_vendor:/opt/ros/rolling/opt/gz_fuel_tools_vendor:/opt/ros/rolling/opt/gz_msgs_vendor:/opt/ros/rolling/opt/gz_common_vendor:/opt/ros/rolling/opt/gz_math_vendor:/opt/ros/rolling/opt/gz_utils_vendor:/opt/ros/rolling/opt/gz_tools_vendor:/opt/ros/rolling/opt/gz_ogre_next_vendor:/opt/ros/rolling/opt/gz_dartsim_vendor:/opt/ros/rolling/opt/gz_cmake_vendor:/opt/ros/rolling'}), 'shell': False}
+[0.801137] (-) TimerEvent: {}
+[0.804635] (micro_ros_agent) StdoutLine: {'line': b"[  6%] \x1b[34m\x1b[1mCreating directories for 'xrceagent'\x1b[0m\n"}
+[0.847741] (micro_ros_agent) StdoutLine: {'line': b"[ 12%] \x1b[34m\x1b[1mPerforming download step (git clone) for 'xrceagent'\x1b[0m\n"}
+[0.880939] (micro_ros_agent) StderrLine: {'line': b"Cloning into 'xrceagent'...\n"}
+[0.901254] (-) TimerEvent: {}
+[0.928322] (ardupilot_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[1.001386] (-) TimerEvent: {}
+[1.101699] (-) TimerEvent: {}
+[1.181387] (ardupilot_msgs) StdoutLine: {'line': b'-- Found geometry_msgs: 5.4.1 (/opt/ros/rolling/share/geometry_msgs/cmake)\n'}
+[1.201827] (-) TimerEvent: {}
+[1.254711] (example_pkg) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/example_pkg', 'build', '--build-base', '/root/ros2_ws/build/example_pkg/build', 'install', '--record', '/root/ros2_ws/build/example_pkg/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/root/ros2_ws/src/example_pkg', 'env': {'GZ_CONFIG_PATH': '/opt/ros/rolling/opt/gz_launch_vendor/share/gz:/opt/ros/rolling/opt/gz_sim_vendor/share/gz:/opt/ros/rolling/opt/sdformat_vendor/share/gz:/opt/ros/rolling/opt/gz_gui_vendor/share/gz:/opt/ros/rolling/opt/gz_transport_vendor/share/gz:/opt/ros/rolling/opt/gz_rendering_vendor/share/gz:/opt/ros/rolling/opt/gz_plugin_vendor/share/gz:/opt/ros/rolling/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/rolling/opt/gz_msgs_vendor/share/gz:/opt/ros/rolling/opt/gz_common_vendor/share/gz', 'HOSTNAME': 'josh-laptop', 'GIT_ASKPASS': '/vscode/vscode-server/bin/linux-x64/38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/rolling/opt/gz_launch_vendor/lib:/opt/ros/rolling/opt/gz_sim_vendor/lib:/opt/ros/rolling/opt/gz_sensors_vendor/lib:/opt/ros/rolling/opt/gz_physics_vendor/lib:/opt/ros/rolling/opt/sdformat_vendor/lib:/opt/ros/rolling/lib/x86_64-linux-gnu:/opt/ros/rolling/opt/gz_gui_vendor/lib:/opt/ros/rolling/opt/gz_transport_vendor/lib:/opt/ros/rolling/opt/gz_rendering_vendor/lib:/opt/ros/rolling/opt/gz_plugin_vendor/lib:/opt/ros/rolling/opt/gz_fuel_tools_vendor/lib:/opt/ros/rolling/opt/gz_msgs_vendor/lib:/opt/ros/rolling/opt/gz_common_vendor/lib:/opt/ros/rolling/opt/gz_math_vendor/lib:/opt/ros/rolling/opt/gz_utils_vendor/lib:/opt/ros/rolling/opt/gz_tools_vendor/lib:/opt/ros/rolling/opt/gz_ogre_next_vendor/lib:/opt/ros/rolling/opt/gz_dartsim_vendor/lib:/opt/ros/rolling/opt/gz_cmake_vendor/lib:/opt/ros/rolling/lib', 'BROWSER': '/vscode/vscode-server/bin/linux-x64/38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/bin/helpers/browser.sh', 'HOME': '/root', 'OLDPWD': '/root/ros2_ws/src', 'TERM_PROGRAM_VERSION': '1.93.1', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-49ea7657-e884-471b-baa9-33a0090204a7.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/vscode/vscode-server/bin/linux-x64/38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/vscode/vscode-server/bin/linux-x64/38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/node', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'ROS_DISTRO': 'rolling', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-2f77408d-856a-497a-b5f0-dfcdfe8de5e6.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/vscode/vscode-server/bin/linux-x64/38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/bin/remote-cli:/opt/ros/rolling/opt/gz_msgs_vendor/bin:/opt/ros/rolling/opt/gz_tools_vendor/bin:/opt/ros/rolling/opt/gz_ogre_next_vendor/bin:/opt/ros/rolling/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'REMOTE_CONTAINERS_SOCKETS': '["/tmp/vscode-ssh-auth-2f77408d-856a-497a-b5f0-dfcdfe8de5e6.sock","/root/.gnupg/S.gpg-agent"]', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/vscode-git-678230d0c7.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/tmp/vscode-ssh-auth-2f77408d-856a-497a-b5f0-dfcdfe8de5e6.sock', 'AMENT_PREFIX_PATH': '/opt/ros/rolling', 'DEBIAN_FRONTEND': 'dialog', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/root/ros2_ws/build/example_pkg', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/root/ros2_ws/build/example_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/ros2_ws/install/example_pkg/lib/python3.12/site-packages:/opt/ros/rolling/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/rolling/opt/gz_launch_vendor:/opt/ros/rolling/opt/gz_sim_vendor:/opt/ros/rolling/opt/gz_sensors_vendor:/opt/ros/rolling/opt/gz_physics_vendor:/opt/ros/rolling/opt/sdformat_vendor:/opt/ros/rolling/opt/gz_gui_vendor:/opt/ros/rolling/opt/gz_transport_vendor:/opt/ros/rolling/opt/gz_rendering_vendor:/opt/ros/rolling/opt/gz_plugin_vendor:/opt/ros/rolling/opt/gz_fuel_tools_vendor:/opt/ros/rolling/opt/gz_msgs_vendor:/opt/ros/rolling/opt/gz_common_vendor:/opt/ros/rolling/opt/gz_math_vendor:/opt/ros/rolling/opt/gz_utils_vendor:/opt/ros/rolling/opt/gz_tools_vendor:/opt/ros/rolling/opt/gz_ogre_next_vendor:/opt/ros/rolling/opt/gz_dartsim_vendor:/opt/ros/rolling/opt/gz_cmake_vendor'}, 'shell': False}
+[1.294492] (ardupilot_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.8.1 (/opt/ros/rolling/share/rosidl_generator_c/cmake)\n'}
+[1.301919] (-) TimerEvent: {}
+[1.330596] (ardupilot_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.8.1 (/opt/ros/rolling/share/rosidl_generator_cpp/cmake)\n'}
+[1.371203] (ardupilot_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.402035] (-) TimerEvent: {}
+[1.413808] (ardupilot_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.502151] (-) TimerEvent: {}
+[1.518559] (ardupilot_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.7.1 (/opt/ros/rolling/share/rosidl_default_generators/cmake)\n'}
+[1.555144] (ardupilot_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.8.1 (/opt/ros/rolling/share/rosidl_adapter/cmake)\n'}
+[1.602285] (-) TimerEvent: {}
+[1.621992] (example_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[1.644279] (example_pkg) StdoutLine: {'line': b'writing ../../build/example_pkg/example_pkg.egg-info/PKG-INFO\n'}
+[1.644653] (example_pkg) StdoutLine: {'line': b'writing dependency_links to ../../build/example_pkg/example_pkg.egg-info/dependency_links.txt\n'}
+[1.644916] (example_pkg) StdoutLine: {'line': b'writing entry points to ../../build/example_pkg/example_pkg.egg-info/entry_points.txt\n'}
+[1.645165] (example_pkg) StdoutLine: {'line': b'writing requirements to ../../build/example_pkg/example_pkg.egg-info/requires.txt\n'}
+[1.645337] (example_pkg) StdoutLine: {'line': b'writing top-level names to ../../build/example_pkg/example_pkg.egg-info/top_level.txt\n'}
+[1.690128] (example_pkg) StdoutLine: {'line': b"reading manifest file '../../build/example_pkg/example_pkg.egg-info/SOURCES.txt'\n"}
+[1.691340] (example_pkg) StdoutLine: {'line': b"writing manifest file '../../build/example_pkg/example_pkg.egg-info/SOURCES.txt'\n"}
+[1.691635] (example_pkg) StdoutLine: {'line': b'running build\n'}
+[1.691767] (example_pkg) StdoutLine: {'line': b'running build_py\n'}
+[1.691983] (example_pkg) StdoutLine: {'line': b'running install\n'}
+[1.701685] (example_pkg) StdoutLine: {'line': b'running install_lib\n'}
+[1.702360] (-) TimerEvent: {}
+[1.725931] (example_pkg) StdoutLine: {'line': b'running install_data\n'}
+[1.726305] (example_pkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.750183] (example_pkg) StdoutLine: {'line': b"removing '/root/ros2_ws/install/example_pkg/lib/python3.12/site-packages/example_pkg-0.0.0-py3.12.egg-info' (and everything under it)\n"}
+[1.750547] (example_pkg) StdoutLine: {'line': b'Copying ../../build/example_pkg/example_pkg.egg-info to /root/ros2_ws/install/example_pkg/lib/python3.12/site-packages/example_pkg-0.0.0-py3.12.egg-info\n'}
+[1.751903] (example_pkg) StdoutLine: {'line': b'running install_scripts\n'}
+[1.802503] (-) TimerEvent: {}
+[1.902824] (-) TimerEvent: {}
+[1.909981] (example_pkg) StdoutLine: {'line': b'Installing example_node script to /root/ros2_ws/install/example_pkg/lib/example_pkg\n'}
+[1.910480] (example_pkg) StdoutLine: {'line': b"writing list of installed files to '/root/ros2_ws/build/example_pkg/install.log'\n"}
+[1.965683] (example_pkg) CommandEnded: {'returncode': 0}
+[1.983759] (example_pkg) JobEnded: {'identifier': 'example_pkg', 'rc': 0}
+[2.002930] (-) TimerEvent: {}
+[2.103257] (-) TimerEvent: {}
+[2.203576] (-) TimerEvent: {}
+[2.303949] (-) TimerEvent: {}
+[2.404350] (-) TimerEvent: {}
+[2.450791] (micro_ros_agent) StderrLine: {'line': b"Switched to a new branch 'ros2'\n"}
+[2.451174] (micro_ros_agent) StdoutLine: {'line': b"branch 'ros2' set up to track 'origin/ros2'.\n"}
+[2.504444] (-) TimerEvent: {}
+[2.527632] (micro_ros_agent) StdoutLine: {'line': b"[ 18%] \x1b[34m\x1b[1mPerforming update step for 'xrceagent'\x1b[0m\n"}
+[2.585547] (ardupilot_msgs) StdoutLine: {'line': b'-- Found ament_cmake_cppcheck: 0.18.1 (/opt/ros/rolling/share/ament_cmake_cppcheck/cmake)\n'}
+[2.593285] (ardupilot_msgs) StdoutLine: {'line': b'-- Found ament_cmake_cpplint: 0.18.1 (/opt/ros/rolling/share/ament_cmake_cpplint/cmake)\n'}
+[2.601264] (ardupilot_msgs) StdoutLine: {'line': b'-- Found ament_cmake_uncrustify: 0.18.1 (/opt/ros/rolling/share/ament_cmake_uncrustify/cmake)\n'}
+[2.604531] (-) TimerEvent: {}
+[2.610246] (ardupilot_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.13.0 (/opt/ros/rolling/share/ament_cmake_ros/cmake)\n'}
+[2.704635] (-) TimerEvent: {}
+[2.804961] (-) TimerEvent: {}
+[2.905275] (-) TimerEvent: {}
+[2.997234] (micro_ros_agent) StdoutLine: {'line': b"[ 25%] \x1b[34m\x1b[1mNo patch step for 'xrceagent'\x1b[0m\n"}
+[3.005379] (-) TimerEvent: {}
+[3.032154] (micro_ros_agent) StdoutLine: {'line': b"[ 31%] \x1b[34m\x1b[1mPerforming configure step for 'xrceagent'\x1b[0m\n"}
+[3.045741] (micro_ros_agent) StdoutLine: {'line': b'loading initial cache file /root/ros2_ws/build/micro_ros_agent/agent/tmp/xrceagent-cache-.cmake\n'}
+[3.105535] (-) TimerEvent: {}
+[3.135851] (micro_ros_agent) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.2.0\n'}
+[3.153176] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[3.205666] (-) TimerEvent: {}
+[3.289217] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[3.305841] (-) TimerEvent: {}
+[3.307972] (micro_ros_agent) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[3.308587] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[3.309701] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[3.406044] (-) TimerEvent: {}
+[3.441476] (micro_ros_agent) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.2.0\n'}
+[3.469741] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[3.506168] (-) TimerEvent: {}
+[3.607025] (-) TimerEvent: {}
+[3.651317] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.673503] (micro_ros_agent) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[3.674190] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.675655] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.707172] (-) TimerEvent: {}
+[3.743624] (micro_ros_agent) StdoutLine: {'line': b'-- Configuring done (0.7s)\n'}
+[3.749101] (micro_ros_agent) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[3.750238] (micro_ros_agent) StdoutLine: {'line': b'-- Build files have been written to: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build\n'}
+[3.780375] (micro_ros_agent) StdoutLine: {'line': b"[ 37%] \x1b[34m\x1b[1mPerforming build step for 'xrceagent'\x1b[0m\n"}
+[3.807271] (-) TimerEvent: {}
+[3.838706] (micro_ros_agent) StdoutLine: {'line': b"[  6%] \x1b[34m\x1b[1mCreating directories for 'spdlog'\x1b[0m\n"}
+[3.882462] (micro_ros_agent) StdoutLine: {'line': b"[ 12%] \x1b[34m\x1b[1mPerforming download step (git clone) for 'spdlog'\x1b[0m\n"}
+[3.907416] (-) TimerEvent: {}
+[3.922308] (ardupilot_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.927981] (micro_ros_agent) StderrLine: {'line': b"Cloning into 'spdlog'...\n"}
+[4.007539] (-) TimerEvent: {}
+[4.108000] (-) TimerEvent: {}
+[4.208508] (-) TimerEvent: {}
+[4.308968] (-) TimerEvent: {}
+[4.406514] (ardupilot_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.409085] (-) TimerEvent: {}
+[4.416135] (ardupilot_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.12.0 (/opt/ros/rolling/share/python_cmake_module/cmake)\n'}
+[4.509195] (-) TimerEvent: {}
+[4.577033] (ardupilot_msgs) StdoutLine: {'line': b'-- Found PythonExtra: /usr/bin/python3  \n'}
+[4.609320] (-) TimerEvent: {}
+[4.709670] (-) TimerEvent: {}
+[4.809988] (-) TimerEvent: {}
+[4.910261] (-) TimerEvent: {}
+[5.010566] (-) TimerEvent: {}
+[5.110879] (-) TimerEvent: {}
+[5.120441] (ardupilot_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[5.211017] (-) TimerEvent: {}
+[5.211981] (ardupilot_msgs) StdoutLine: {'line': b'-- Found ament_cmake_flake8: 0.18.1 (/opt/ros/rolling/share/ament_cmake_flake8/cmake)\n'}
+[5.217866] (ardupilot_msgs) StdoutLine: {'line': b'-- Found ament_cmake_pep257: 0.18.1 (/opt/ros/rolling/share/ament_cmake_pep257/cmake)\n'}
+[5.225606] (ardupilot_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.18.1 (/opt/ros/rolling/share/ament_lint_auto/cmake)\n'}
+[5.249840] (ardupilot_msgs) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[5.251045] (ardupilot_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[5.255803] (ardupilot_msgs) StdoutLine: {'line': b'-- Configuring done (5.2s)\n'}
+[5.311197] (-) TimerEvent: {}
+[5.313535] (ardupilot_msgs) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[5.317161] (ardupilot_msgs) StdoutLine: {'line': b'-- Build files have been written to: /root/ros2_ws/build/ardupilot_msgs\n'}
+[5.330433] (ardupilot_msgs) CommandEnded: {'returncode': 0}
+[5.330998] (ardupilot_msgs) JobProgress: {'identifier': 'ardupilot_msgs', 'progress': 'build'}
+[5.331322] (ardupilot_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/ros2_ws/build/ardupilot_msgs', '--', '-j12', '-l12'], 'cwd': '/root/ros2_ws/build/ardupilot_msgs', 'env': OrderedDict({'GZ_CONFIG_PATH': '/opt/ros/rolling/opt/gz_launch_vendor/share/gz:/opt/ros/rolling/opt/gz_sim_vendor/share/gz:/opt/ros/rolling/opt/sdformat_vendor/share/gz:/opt/ros/rolling/opt/gz_gui_vendor/share/gz:/opt/ros/rolling/opt/gz_transport_vendor/share/gz:/opt/ros/rolling/opt/gz_rendering_vendor/share/gz:/opt/ros/rolling/opt/gz_plugin_vendor/share/gz:/opt/ros/rolling/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/rolling/opt/gz_msgs_vendor/share/gz:/opt/ros/rolling/opt/gz_common_vendor/share/gz', 'HOSTNAME': 'josh-laptop', 'GIT_ASKPASS': '/vscode/vscode-server/bin/linux-x64/38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/rolling/opt/gz_launch_vendor/lib:/opt/ros/rolling/opt/gz_sim_vendor/lib:/opt/ros/rolling/opt/gz_sensors_vendor/lib:/opt/ros/rolling/opt/gz_physics_vendor/lib:/opt/ros/rolling/opt/sdformat_vendor/lib:/opt/ros/rolling/lib/x86_64-linux-gnu:/opt/ros/rolling/opt/gz_gui_vendor/lib:/opt/ros/rolling/opt/gz_transport_vendor/lib:/opt/ros/rolling/opt/gz_rendering_vendor/lib:/opt/ros/rolling/opt/gz_plugin_vendor/lib:/opt/ros/rolling/opt/gz_fuel_tools_vendor/lib:/opt/ros/rolling/opt/gz_msgs_vendor/lib:/opt/ros/rolling/opt/gz_common_vendor/lib:/opt/ros/rolling/opt/gz_math_vendor/lib:/opt/ros/rolling/opt/gz_utils_vendor/lib:/opt/ros/rolling/opt/gz_tools_vendor/lib:/opt/ros/rolling/opt/gz_ogre_next_vendor/lib:/opt/ros/rolling/opt/gz_dartsim_vendor/lib:/opt/ros/rolling/opt/gz_cmake_vendor/lib:/opt/ros/rolling/lib', 'BROWSER': '/vscode/vscode-server/bin/linux-x64/38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/bin/helpers/browser.sh', 'HOME': '/root', 'OLDPWD': '/root/ros2_ws/src', 'TERM_PROGRAM_VERSION': '1.93.1', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-49ea7657-e884-471b-baa9-33a0090204a7.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/vscode/vscode-server/bin/linux-x64/38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/vscode/vscode-server/bin/linux-x64/38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/node', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'ROS_DISTRO': 'rolling', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-2f77408d-856a-497a-b5f0-dfcdfe8de5e6.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/vscode/vscode-server/bin/linux-x64/38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/bin/remote-cli:/opt/ros/rolling/opt/gz_msgs_vendor/bin:/opt/ros/rolling/opt/gz_tools_vendor/bin:/opt/ros/rolling/opt/gz_ogre_next_vendor/bin:/opt/ros/rolling/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'REMOTE_CONTAINERS_SOCKETS': '["/tmp/vscode-ssh-auth-2f77408d-856a-497a-b5f0-dfcdfe8de5e6.sock","/root/.gnupg/S.gpg-agent"]', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/vscode-git-678230d0c7.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/tmp/vscode-ssh-auth-2f77408d-856a-497a-b5f0-dfcdfe8de5e6.sock', 'AMENT_PREFIX_PATH': '/opt/ros/rolling', 'DEBIAN_FRONTEND': 'dialog', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/root/ros2_ws/build/ardupilot_msgs', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/opt/ros/rolling/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/rolling/opt/gz_launch_vendor:/opt/ros/rolling/opt/gz_sim_vendor:/opt/ros/rolling/opt/gz_sensors_vendor:/opt/ros/rolling/opt/gz_physics_vendor:/opt/ros/rolling/opt/sdformat_vendor:/opt/ros/rolling/opt/gz_gui_vendor:/opt/ros/rolling/opt/gz_transport_vendor:/opt/ros/rolling/opt/gz_rendering_vendor:/opt/ros/rolling/opt/gz_plugin_vendor:/opt/ros/rolling/opt/gz_fuel_tools_vendor:/opt/ros/rolling/opt/gz_msgs_vendor:/opt/ros/rolling/opt/gz_common_vendor:/opt/ros/rolling/opt/gz_math_vendor:/opt/ros/rolling/opt/gz_utils_vendor:/opt/ros/rolling/opt/gz_tools_vendor:/opt/ros/rolling/opt/gz_ogre_next_vendor:/opt/ros/rolling/opt/gz_dartsim_vendor:/opt/ros/rolling/opt/gz_cmake_vendor:/opt/ros/rolling'}), 'shell': False}
+[5.394381] (ardupilot_msgs) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating type hashes for ROS interfaces\x1b[0m\n'}
+[5.405498] (ardupilot_msgs) StdoutLine: {'line': b'[  1%] Built target ament_cmake_python_copy_ardupilot_msgs\n'}
+[5.411277] (-) TimerEvent: {}
+[5.511583] (-) TimerEvent: {}
+[5.611856] (-) TimerEvent: {}
+[5.690008] (ardupilot_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[5.692146] (ardupilot_msgs) StdoutLine: {'line': b'creating ardupilot_msgs.egg-info\n'}
+[5.711959] (-) TimerEvent: {}
+[5.728425] (ardupilot_msgs) StdoutLine: {'line': b'writing ardupilot_msgs.egg-info/PKG-INFO\n'}
+[5.728826] (ardupilot_msgs) StdoutLine: {'line': b'writing dependency_links to ardupilot_msgs.egg-info/dependency_links.txt\n'}
+[5.729142] (ardupilot_msgs) StdoutLine: {'line': b'writing top-level names to ardupilot_msgs.egg-info/top_level.txt\n'}
+[5.737543] (ardupilot_msgs) StdoutLine: {'line': b"writing manifest file 'ardupilot_msgs.egg-info/SOURCES.txt'\n"}
+[5.812070] (-) TimerEvent: {}
+[5.834910] (ardupilot_msgs) StdoutLine: {'line': b"reading manifest file 'ardupilot_msgs.egg-info/SOURCES.txt'\n"}
+[5.835979] (ardupilot_msgs) StdoutLine: {'line': b"writing manifest file 'ardupilot_msgs.egg-info/SOURCES.txt'\n"}
+[5.890583] (ardupilot_msgs) StdoutLine: {'line': b'[  1%] Built target ament_cmake_python_build_ardupilot_msgs_egg\n'}
+[5.912173] (-) TimerEvent: {}
+[6.012519] (-) TimerEvent: {}
+[6.046553] (ardupilot_msgs) StdoutLine: {'line': b'[  1%] Built target ardupilot_msgs__rosidl_generator_type_description\n'}
+[6.062362] (ardupilot_msgs) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[6.077130] (ardupilot_msgs) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[6.112630] (-) TimerEvent: {}
+[6.212997] (-) TimerEvent: {}
+[6.313301] (-) TimerEvent: {}
+[6.413664] (-) TimerEvent: {}
+[6.513973] (-) TimerEvent: {}
+[6.614254] (-) TimerEvent: {}
+[6.714588] (-) TimerEvent: {}
+[6.814958] (-) TimerEvent: {}
+[6.915317] (-) TimerEvent: {}
+[6.946575] (ardupilot_msgs) StdoutLine: {'line': b'[  5%] Built target ardupilot_msgs__cpp\n'}
+[7.015413] (-) TimerEvent: {}
+[7.115694] (-) TimerEvent: {}
+[7.151838] (ardupilot_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/ardupilot_msgs__rosidl_generator_c.dir/rosidl_generator_c/ardupilot_msgs/msg/detail/global_position__type_support.c.o\x1b[0m\n'}
+[7.153635] (ardupilot_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/ardupilot_msgs__rosidl_generator_c.dir/rosidl_generator_c/ardupilot_msgs/msg/detail/global_position__functions.c.o\x1b[0m\n'}
+[7.154593] (ardupilot_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/ardupilot_msgs__rosidl_generator_c.dir/rosidl_generator_c/ardupilot_msgs/msg/detail/global_position__description.c.o\x1b[0m\n'}
+[7.155858] (ardupilot_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/ardupilot_msgs__rosidl_generator_c.dir/rosidl_generator_c/ardupilot_msgs/srv/detail/arm_motors__functions.c.o\x1b[0m\n'}
+[7.156167] (ardupilot_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/ardupilot_msgs__rosidl_generator_c.dir/rosidl_generator_c/ardupilot_msgs/srv/detail/arm_motors__description.c.o\x1b[0m\n'}
+[7.175922] (ardupilot_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding C object CMakeFiles/ardupilot_msgs__rosidl_generator_c.dir/rosidl_generator_c/ardupilot_msgs/srv/detail/arm_motors__type_support.c.o\x1b[0m\n'}
+[7.177340] (ardupilot_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding C object CMakeFiles/ardupilot_msgs__rosidl_generator_c.dir/rosidl_generator_c/ardupilot_msgs/srv/detail/mode_switch__description.c.o\x1b[0m\n'}
+[7.195089] (ardupilot_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/ardupilot_msgs__rosidl_generator_c.dir/rosidl_generator_c/ardupilot_msgs/srv/detail/mode_switch__functions.c.o\x1b[0m\n'}
+[7.195968] (ardupilot_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding C object CMakeFiles/ardupilot_msgs__rosidl_generator_c.dir/rosidl_generator_c/ardupilot_msgs/srv/detail/mode_switch__type_support.c.o\x1b[0m\n'}
+[7.215835] (-) TimerEvent: {}
+[7.316285] (-) TimerEvent: {}
+[7.416713] (-) TimerEvent: {}
+[7.448221] (ardupilot_msgs) StdoutLine: {'line': b'[ 24%] \x1b[32m\x1b[1mLinking C shared library libardupilot_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[7.511337] (ardupilot_msgs) StdoutLine: {'line': b'[ 24%] Built target ardupilot_msgs__rosidl_generator_c\n'}
+[7.516825] (-) TimerEvent: {}
+[7.533347] (ardupilot_msgs) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[7.534226] (ardupilot_msgs) StdoutLine: {'line': b'[ 27%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[7.536045] (ardupilot_msgs) StdoutLine: {'line': b'[ 31%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[7.536454] (ardupilot_msgs) StdoutLine: {'line': b'[ 31%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[7.536710] (ardupilot_msgs) StdoutLine: {'line': b'[ 33%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[7.537001] (ardupilot_msgs) StdoutLine: {'line': b'[ 35%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[7.616945] (-) TimerEvent: {}
+[7.717395] (-) TimerEvent: {}
+[7.817954] (-) TimerEvent: {}
+[7.918433] (-) TimerEvent: {}
+[8.018899] (-) TimerEvent: {}
+[8.119459] (-) TimerEvent: {}
+[8.219899] (-) TimerEvent: {}
+[8.320354] (-) TimerEvent: {}
+[8.420788] (-) TimerEvent: {}
+[8.521174] (-) TimerEvent: {}
+[8.522073] (ardupilot_msgs) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/ardupilot_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ardupilot_msgs/msg/global_position__type_support.cpp.o\x1b[0m\n'}
+[8.523631] (ardupilot_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/ardupilot_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ardupilot_msgs/srv/arm_motors__type_support.cpp.o\x1b[0m\n'}
+[8.524123] (ardupilot_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/ardupilot_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ardupilot_msgs/srv/mode_switch__type_support.cpp.o\x1b[0m\n'}
+[8.621308] (-) TimerEvent: {}
+[8.722105] (-) TimerEvent: {}
+[8.822614] (-) TimerEvent: {}
+[8.923113] (-) TimerEvent: {}
+[9.023901] (-) TimerEvent: {}
+[9.124627] (-) TimerEvent: {}
+[9.169760] (ardupilot_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/ardupilot_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ardupilot_msgs/msg/global_position__type_support.cpp.o\x1b[0m\n'}
+[9.200012] (ardupilot_msgs) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/ardupilot_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ardupilot_msgs/srv/mode_switch__type_support.cpp.o\x1b[0m\n'}
+[9.205886] (ardupilot_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/ardupilot_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ardupilot_msgs/srv/arm_motors__type_support.cpp.o\x1b[0m\n'}
+[9.224775] (-) TimerEvent: {}
+[9.228612] (ardupilot_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/ardupilot_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ardupilot_msgs/msg/detail/global_position__type_support_c.cpp.o\x1b[0m\n'}
+[9.235127] (ardupilot_msgs) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/ardupilot_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ardupilot_msgs/srv/detail/arm_motors__type_support_c.cpp.o\x1b[0m\n'}
+[9.309023] (ardupilot_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/ardupilot_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ardupilot_msgs/msg/detail/dds_fastrtps/global_position__type_support.cpp.o\x1b[0m\n'}
+[9.324911] (-) TimerEvent: {}
+[9.340585] (ardupilot_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/ardupilot_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ardupilot_msgs/msg/detail/global_position__type_support.cpp.o\x1b[0m\n'}
+[9.353451] (ardupilot_msgs) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/ardupilot_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ardupilot_msgs/srv/detail/dds_fastrtps/arm_motors__type_support.cpp.o\x1b[0m\n'}
+[9.391312] (ardupilot_msgs) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/ardupilot_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ardupilot_msgs/srv/detail/arm_motors__type_support.cpp.o\x1b[0m\n'}
+[9.417026] (ardupilot_msgs) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/ardupilot_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ardupilot_msgs/srv/detail/dds_fastrtps/mode_switch__type_support.cpp.o\x1b[0m\n'}
+[9.425049] (-) TimerEvent: {}
+[9.431504] (ardupilot_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking CXX shared library libardupilot_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[9.525201] (-) TimerEvent: {}
+[9.551350] (ardupilot_msgs) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding C object CMakeFiles/ardupilot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ardupilot_msgs/msg/detail/global_position__type_support.c.o\x1b[0m\n'}
+[9.625343] (-) TimerEvent: {}
+[9.726159] (-) TimerEvent: {}
+[9.766598] (ardupilot_msgs) StdoutLine: {'line': b'[ 62%] Built target ardupilot_msgs__rosidl_typesupport_c\n'}
+[9.801731] (ardupilot_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding C object CMakeFiles/ardupilot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ardupilot_msgs/srv/detail/arm_motors__type_support.c.o\x1b[0m\n'}
+[9.826308] (-) TimerEvent: {}
+[9.831022] (ardupilot_msgs) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding C object CMakeFiles/ardupilot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ardupilot_msgs/srv/detail/mode_switch__type_support.c.o\x1b[0m\n'}
+[9.926470] (-) TimerEvent: {}
+[9.996425] (ardupilot_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/ardupilot_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ardupilot_msgs/srv/detail/mode_switch__type_support.cpp.o\x1b[0m\n'}
+[10.026597] (-) TimerEvent: {}
+[10.055500] (ardupilot_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/ardupilot_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ardupilot_msgs/srv/detail/mode_switch__type_support_c.cpp.o\x1b[0m\n'}
+[10.085402] (ardupilot_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32m\x1b[1mLinking C shared library libardupilot_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[10.088994] (micro_ros_agent) StderrLine: {'line': b'HEAD is now at eb322062 Bump version to 1.9.2\n'}
+[10.126740] (-) TimerEvent: {}
+[10.228017] (-) TimerEvent: {}
+[10.326604] (ardupilot_msgs) StdoutLine: {'line': b'[ 72%] Built target ardupilot_msgs__rosidl_typesupport_introspection_c\n'}
+[10.328189] (-) TimerEvent: {}
+[10.428631] (-) TimerEvent: {}
+[10.505675] (micro_ros_agent) StdoutLine: {'line': b"[ 18%] \x1b[34m\x1b[1mPerforming update step for 'spdlog'\x1b[0m\n"}
+[10.528767] (-) TimerEvent: {}
+[10.565925] (ardupilot_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libardupilot_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[10.628913] (-) TimerEvent: {}
+[10.688905] (micro_ros_agent) StdoutLine: {'line': b"[ 25%] \x1b[34m\x1b[1mNo patch step for 'spdlog'\x1b[0m\n"}
+[10.729059] (-) TimerEvent: {}
+[10.829888] (-) TimerEvent: {}
+[10.837793] (ardupilot_msgs) StdoutLine: {'line': b'[ 74%] Built target ardupilot_msgs__rosidl_typesupport_cpp\n'}
+[10.867097] (micro_ros_agent) StdoutLine: {'line': b"[ 31%] \x1b[34m\x1b[1mPerforming configure step for 'spdlog'\x1b[0m\n"}
+[10.891950] (micro_ros_agent) StdoutLine: {'line': b'loading initial cache file /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/tmp/spdlog-cache-.cmake\n'}
+[10.930044] (-) TimerEvent: {}
+[11.031174] (-) TimerEvent: {}
+[11.132036] (-) TimerEvent: {}
+[11.166288] (micro_ros_agent) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.2.0\n'}
+[11.219610] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[11.232170] (-) TimerEvent: {}
+[11.338977] (-) TimerEvent: {}
+[11.440323] (-) TimerEvent: {}
+[11.540815] (-) TimerEvent: {}
+[11.592418] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[11.637265] (micro_ros_agent) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[11.638093] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[11.639778] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[11.641216] (-) TimerEvent: {}
+[11.641822] (micro_ros_agent) StdoutLine: {'line': b'-- Build spdlog: 1.9.2\n'}
+[11.652736] (micro_ros_agent) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[11.741361] (-) TimerEvent: {}
+[11.838144] (ardupilot_msgs) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX shared library libardupilot_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[11.841474] (-) TimerEvent: {}
+[11.911920] (micro_ros_agent) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[11.914343] (micro_ros_agent) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[11.914674] (micro_ros_agent) StdoutLine: {'line': b'-- Build type: Release\n'}
+[11.916442] (micro_ros_agent) StdoutLine: {'line': b'-- Generating example(s)\n'}
+[11.918028] (micro_ros_agent) StdoutLine: {'line': b'-- Generating install\n'}
+[11.941631] (-) TimerEvent: {}
+[11.945656] (micro_ros_agent) StdoutLine: {'line': b'-- Configuring done (1.1s)\n'}
+[11.967806] (micro_ros_agent) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[11.970245] (micro_ros_agent) StdoutLine: {'line': b'-- Build files have been written to: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/spdlog/src/spdlog-build\n'}
+[12.005913] (micro_ros_agent) StdoutLine: {'line': b"[ 37%] \x1b[34m\x1b[1mPerforming build step for 'spdlog'\x1b[0m\n"}
+[12.009781] (ardupilot_msgs) StdoutLine: {'line': b'[ 75%] Built target ardupilot_msgs__rosidl_typesupport_introspection_cpp\n'}
+[12.041766] (-) TimerEvent: {}
+[12.044777] (ardupilot_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking CXX shared library libardupilot_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[12.081240] (micro_ros_agent) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o\x1b[0m\n'}
+[12.081675] (micro_ros_agent) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/spdlog.dir/src/file_sinks.cpp.o\x1b[0m\n'}
+[12.081933] (micro_ros_agent) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/spdlog.dir/src/spdlog.cpp.o\x1b[0m\n'}
+[12.082253] (micro_ros_agent) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/spdlog.dir/src/color_sinks.cpp.o\x1b[0m\n'}
+[12.082506] (micro_ros_agent) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/spdlog.dir/src/cfg.cpp.o\x1b[0m\n'}
+[12.082734] (micro_ros_agent) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/spdlog.dir/src/async.cpp.o\x1b[0m\n'}
+[12.084942] (micro_ros_agent) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/spdlog.dir/src/fmt.cpp.o\x1b[0m\n'}
+[12.141918] (-) TimerEvent: {}
+[12.149404] (ardupilot_msgs) StdoutLine: {'line': b'[ 79%] \x1b[32m\x1b[1mLinking CXX shared library libardupilot_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[12.242076] (-) TimerEvent: {}
+[12.292696] (ardupilot_msgs) StdoutLine: {'line': b'[ 79%] Built target ardupilot_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[12.301884] (ardupilot_msgs) StdoutLine: {'line': b'[ 79%] Built target ardupilot_msgs__rosidl_typesupport_fastrtps_c\n'}
+[12.342214] (-) TimerEvent: {}
+[12.413268] (ardupilot_msgs) StdoutLine: {'line': b'[ 79%] Built target ardupilot_msgs\n'}
+[12.443156] (-) TimerEvent: {}
+[12.496108] (ardupilot_msgs) StdoutLine: {'line': b'[ 81%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[12.543289] (-) TimerEvent: {}
+[12.643798] (-) TimerEvent: {}
+[12.744280] (-) TimerEvent: {}
+[12.845009] (-) TimerEvent: {}
+[12.945741] (-) TimerEvent: {}
+[13.046227] (-) TimerEvent: {}
+[13.146696] (-) TimerEvent: {}
+[13.247151] (-) TimerEvent: {}
+[13.347842] (-) TimerEvent: {}
+[13.448560] (-) TimerEvent: {}
+[13.549031] (-) TimerEvent: {}
+[13.649519] (-) TimerEvent: {}
+[13.750310] (-) TimerEvent: {}
+[13.850756] (-) TimerEvent: {}
+[13.952046] (-) TimerEvent: {}
+[14.052503] (-) TimerEvent: {}
+[14.152957] (-) TimerEvent: {}
+[14.253437] (-) TimerEvent: {}
+[14.353912] (-) TimerEvent: {}
+[14.454293] (-) TimerEvent: {}
+[14.554669] (-) TimerEvent: {}
+[14.655558] (-) TimerEvent: {}
+[14.756644] (-) TimerEvent: {}
+[14.857037] (-) TimerEvent: {}
+[14.957724] (-) TimerEvent: {}
+[15.058792] (-) TimerEvent: {}
+[15.159211] (-) TimerEvent: {}
+[15.259588] (-) TimerEvent: {}
+[15.360021] (-) TimerEvent: {}
+[15.460493] (-) TimerEvent: {}
+[15.561194] (-) TimerEvent: {}
+[15.662308] (-) TimerEvent: {}
+[15.763126] (-) TimerEvent: {}
+[15.777712] (ardupilot_msgs) StdoutLine: {'line': b'[ 81%] Built target ardupilot_msgs__py\n'}
+[15.822752] (ardupilot_msgs) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/ardupilot_msgs__rosidl_generator_py.dir/rosidl_generator_py/ardupilot_msgs/srv/_mode_switch_s.c.o\x1b[0m\n'}
+[15.826407] (ardupilot_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/ardupilot_msgs__rosidl_generator_py.dir/rosidl_generator_py/ardupilot_msgs/srv/_arm_motors_s.c.o\x1b[0m\n'}
+[15.827225] (ardupilot_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/ardupilot_msgs__rosidl_generator_py.dir/rosidl_generator_py/ardupilot_msgs/msg/_global_position_s.c.o\x1b[0m\n'}
+[15.863260] (-) TimerEvent: {}
+[15.963770] (-) TimerEvent: {}
+[16.064253] (-) TimerEvent: {}
+[16.164725] (-) TimerEvent: {}
+[16.265201] (-) TimerEvent: {}
+[16.343327] (ardupilot_msgs) StdoutLine: {'line': b'[ 88%] \x1b[32m\x1b[1mLinking C shared library libardupilot_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[16.365338] (-) TimerEvent: {}
+[16.426589] (ardupilot_msgs) StdoutLine: {'line': b'[ 88%] Built target ardupilot_msgs__rosidl_generator_py\n'}
+[16.459609] (ardupilot_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/ardupilot_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/ardupilot_msgs/_ardupilot_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[16.460012] (ardupilot_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/ardupilot_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/ardupilot_msgs/_ardupilot_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[16.465465] (-) TimerEvent: {}
+[16.470598] (ardupilot_msgs) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/ardupilot_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/ardupilot_msgs/_ardupilot_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[16.565604] (-) TimerEvent: {}
+[16.666070] (-) TimerEvent: {}
+[16.713467] (ardupilot_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/ardupilot_msgs/ardupilot_msgs_s__rosidl_typesupport_c.so\x1b[0m\n'}
+[16.761997] (ardupilot_msgs) StdoutLine: {'line': b'[ 96%] Built target ardupilot_msgs_s__rosidl_typesupport_c\n'}
+[16.766197] (-) TimerEvent: {}
+[16.852405] (ardupilot_msgs) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/ardupilot_msgs/ardupilot_msgs_s__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[16.860820] (ardupilot_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/ardupilot_msgs/ardupilot_msgs_s__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[16.866324] (-) TimerEvent: {}
+[16.910962] (ardupilot_msgs) StdoutLine: {'line': b'[100%] Built target ardupilot_msgs_s__rosidl_typesupport_fastrtps_c\n'}
+[16.916629] (ardupilot_msgs) StdoutLine: {'line': b'[100%] Built target ardupilot_msgs_s__rosidl_typesupport_introspection_c\n'}
+[16.935356] (ardupilot_msgs) CommandEnded: {'returncode': 0}
+[16.966415] (-) TimerEvent: {}
+[17.066864] (-) TimerEvent: {}
+[17.079588] (ardupilot_msgs) JobProgress: {'identifier': 'ardupilot_msgs', 'progress': 'install'}
+[17.095411] (ardupilot_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/root/ros2_ws/build/ardupilot_msgs'], 'cwd': '/root/ros2_ws/build/ardupilot_msgs', 'env': OrderedDict({'GZ_CONFIG_PATH': '/opt/ros/rolling/opt/gz_launch_vendor/share/gz:/opt/ros/rolling/opt/gz_sim_vendor/share/gz:/opt/ros/rolling/opt/sdformat_vendor/share/gz:/opt/ros/rolling/opt/gz_gui_vendor/share/gz:/opt/ros/rolling/opt/gz_transport_vendor/share/gz:/opt/ros/rolling/opt/gz_rendering_vendor/share/gz:/opt/ros/rolling/opt/gz_plugin_vendor/share/gz:/opt/ros/rolling/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/rolling/opt/gz_msgs_vendor/share/gz:/opt/ros/rolling/opt/gz_common_vendor/share/gz', 'HOSTNAME': 'josh-laptop', 'GIT_ASKPASS': '/vscode/vscode-server/bin/linux-x64/38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/rolling/opt/gz_launch_vendor/lib:/opt/ros/rolling/opt/gz_sim_vendor/lib:/opt/ros/rolling/opt/gz_sensors_vendor/lib:/opt/ros/rolling/opt/gz_physics_vendor/lib:/opt/ros/rolling/opt/sdformat_vendor/lib:/opt/ros/rolling/lib/x86_64-linux-gnu:/opt/ros/rolling/opt/gz_gui_vendor/lib:/opt/ros/rolling/opt/gz_transport_vendor/lib:/opt/ros/rolling/opt/gz_rendering_vendor/lib:/opt/ros/rolling/opt/gz_plugin_vendor/lib:/opt/ros/rolling/opt/gz_fuel_tools_vendor/lib:/opt/ros/rolling/opt/gz_msgs_vendor/lib:/opt/ros/rolling/opt/gz_common_vendor/lib:/opt/ros/rolling/opt/gz_math_vendor/lib:/opt/ros/rolling/opt/gz_utils_vendor/lib:/opt/ros/rolling/opt/gz_tools_vendor/lib:/opt/ros/rolling/opt/gz_ogre_next_vendor/lib:/opt/ros/rolling/opt/gz_dartsim_vendor/lib:/opt/ros/rolling/opt/gz_cmake_vendor/lib:/opt/ros/rolling/lib', 'BROWSER': '/vscode/vscode-server/bin/linux-x64/38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/bin/helpers/browser.sh', 'HOME': '/root', 'OLDPWD': '/root/ros2_ws/src', 'TERM_PROGRAM_VERSION': '1.93.1', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-49ea7657-e884-471b-baa9-33a0090204a7.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/vscode/vscode-server/bin/linux-x64/38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/vscode/vscode-server/bin/linux-x64/38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/node', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'ROS_DISTRO': 'rolling', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-2f77408d-856a-497a-b5f0-dfcdfe8de5e6.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/vscode/vscode-server/bin/linux-x64/38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/bin/remote-cli:/opt/ros/rolling/opt/gz_msgs_vendor/bin:/opt/ros/rolling/opt/gz_tools_vendor/bin:/opt/ros/rolling/opt/gz_ogre_next_vendor/bin:/opt/ros/rolling/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'REMOTE_CONTAINERS_SOCKETS': '["/tmp/vscode-ssh-auth-2f77408d-856a-497a-b5f0-dfcdfe8de5e6.sock","/root/.gnupg/S.gpg-agent"]', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/vscode-git-678230d0c7.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/tmp/vscode-ssh-auth-2f77408d-856a-497a-b5f0-dfcdfe8de5e6.sock', 'AMENT_PREFIX_PATH': '/opt/ros/rolling', 'DEBIAN_FRONTEND': 'dialog', 'SHELL': '/bin/bash', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/root/ros2_ws/build/ardupilot_msgs', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/opt/ros/rolling/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/rolling/opt/gz_launch_vendor:/opt/ros/rolling/opt/gz_sim_vendor:/opt/ros/rolling/opt/gz_sensors_vendor:/opt/ros/rolling/opt/gz_physics_vendor:/opt/ros/rolling/opt/sdformat_vendor:/opt/ros/rolling/opt/gz_gui_vendor:/opt/ros/rolling/opt/gz_transport_vendor:/opt/ros/rolling/opt/gz_rendering_vendor:/opt/ros/rolling/opt/gz_plugin_vendor:/opt/ros/rolling/opt/gz_fuel_tools_vendor:/opt/ros/rolling/opt/gz_msgs_vendor:/opt/ros/rolling/opt/gz_common_vendor:/opt/ros/rolling/opt/gz_math_vendor:/opt/ros/rolling/opt/gz_utils_vendor:/opt/ros/rolling/opt/gz_tools_vendor:/opt/ros/rolling/opt/gz_ogre_next_vendor:/opt/ros/rolling/opt/gz_dartsim_vendor:/opt/ros/rolling/opt/gz_cmake_vendor:/opt/ros/rolling'}), 'shell': False}
+[17.110629] (ardupilot_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[17.111102] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ament_index/resource_index/rosidl_interfaces/ardupilot_msgs\n'}
+[17.111490] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/msg/GlobalPosition.json\n'}
+[17.111834] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/srv/ArmMotors.json\n'}
+[17.112082] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/srv/ModeSwitch.json\n'}
+[17.112346] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs\n'}
+[17.112615] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv\n'}
+[17.112857] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/mode_switch.h\n'}
+[17.113125] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail\n'}
+[17.113397] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail/arm_motors__type_support.h\n'}
+[17.113701] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail/arm_motors__functions.c\n'}
+[17.113998] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail/mode_switch__description.c\n'}
+[17.114289] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail/arm_motors__functions.h\n'}
+[17.114585] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail/mode_switch__type_support.c\n'}
+[17.114874] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail/arm_motors__description.c\n'}
+[17.115153] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail/mode_switch__type_support.h\n'}
+[17.115447] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail/mode_switch__functions.c\n'}
+[17.115714] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail/mode_switch__struct.h\n'}
+[17.115965] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail/mode_switch__functions.h\n'}
+[17.116239] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail/arm_motors__struct.h\n'}
+[17.116495] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail/arm_motors__type_support.c\n'}
+[17.116767] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/arm_motors.h\n'}
+[17.117025] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg\n'}
+[17.117265] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[17.117511] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg/global_position.h\n'}
+[17.117830] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg/detail\n'}
+[17.118101] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg/detail/global_position__description.c\n'}
+[17.118391] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg/detail/global_position__functions.h\n'}
+[17.118696] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg/detail/global_position__struct.h\n'}
+[17.118975] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg/detail/global_position__functions.c\n'}
+[17.119234] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg/detail/global_position__type_support.h\n'}
+[17.119488] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg/detail/global_position__type_support.c\n'}
+[17.119861] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/environment/library_path.sh\n'}
+[17.120142] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/environment/library_path.dsv\n'}
+[17.120455] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/libardupilot_msgs__rosidl_generator_c.so\n'}
+[17.120744] (ardupilot_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/root/ros2_ws/install/ardupilot_msgs/lib/libardupilot_msgs__rosidl_generator_c.so" to ""\n'}
+[17.121065] (ardupilot_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs\n'}
+[17.121333] (ardupilot_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv\n'}
+[17.121650] (ardupilot_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail\n'}
+[17.121975] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail/arm_motors__rosidl_typesupport_fastrtps_c.h\n'}
+[17.122258] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail/mode_switch__rosidl_typesupport_fastrtps_c.h\n'}
+[17.122527] (ardupilot_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg\n'}
+[17.122821] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[17.123101] (ardupilot_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg/detail\n'}
+[17.123349] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg/detail/global_position__rosidl_typesupport_fastrtps_c.h\n'}
+[17.123641] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/libardupilot_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[17.123931] (ardupilot_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/root/ros2_ws/install/ardupilot_msgs/lib/libardupilot_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[17.124212] (ardupilot_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs\n'}
+[17.124462] (ardupilot_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv\n'}
+[17.124686] (ardupilot_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail\n'}
+[17.124910] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail/arm_motors__traits.hpp\n'}
+[17.125189] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail/mode_switch__type_support.hpp\n'}
+[17.125450] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail/arm_motors__struct.hpp\n'}
+[17.125729] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail/mode_switch__traits.hpp\n'}
+[17.125989] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail/arm_motors__builder.hpp\n'}
+[17.126323] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail/arm_motors__type_support.hpp\n'}
+[17.126615] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail/mode_switch__struct.hpp\n'}
+[17.126855] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail/mode_switch__builder.hpp\n'}
+[17.127198] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/arm_motors.hpp\n'}
+[17.127448] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/mode_switch.hpp\n'}
+[17.127732] (ardupilot_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg\n'}
+[17.127993] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[17.128211] (ardupilot_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg/detail\n'}
+[17.128508] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg/detail/global_position__builder.hpp\n'}
+[17.128784] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg/detail/global_position__struct.hpp\n'}
+[17.129059] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg/detail/global_position__traits.hpp\n'}
+[17.129314] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg/detail/global_position__type_support.hpp\n'}
+[17.129594] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg/global_position.hpp\n'}
+[17.129843] (ardupilot_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs\n'}
+[17.130084] (ardupilot_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv\n'}
+[17.130303] (ardupilot_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail\n'}
+[17.130517] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail/mode_switch__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[17.130762] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail/arm_motors__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[17.131022] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail/dds_fastrtps\n'}
+[17.131278] (ardupilot_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg\n'}
+[17.131556] (ardupilot_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg/detail\n'}
+[17.131801] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg/detail/global_position__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[17.132044] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg/detail/dds_fastrtps\n'}
+[17.132293] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[17.132549] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/libardupilot_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[17.132832] (ardupilot_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/root/ros2_ws/install/ardupilot_msgs/lib/libardupilot_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[17.133090] (ardupilot_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs\n'}
+[17.133366] (ardupilot_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv\n'}
+[17.133641] (ardupilot_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail\n'}
+[17.133931] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail/mode_switch__type_support.c\n'}
+[17.134214] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail/mode_switch__rosidl_typesupport_introspection_c.h\n'}
+[17.134489] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail/arm_motors__rosidl_typesupport_introspection_c.h\n'}
+[17.134769] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail/arm_motors__type_support.c\n'}
+[17.135022] (ardupilot_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg\n'}
+[17.135322] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[17.135610] (ardupilot_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg/detail\n'}
+[17.135899] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg/detail/global_position__rosidl_typesupport_introspection_c.h\n'}
+[17.136143] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg/detail/global_position__type_support.c\n'}
+[17.136382] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/libardupilot_msgs__rosidl_typesupport_introspection_c.so\n'}
+[17.136618] (ardupilot_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/root/ros2_ws/install/ardupilot_msgs/lib/libardupilot_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[17.136852] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/libardupilot_msgs__rosidl_typesupport_c.so\n'}
+[17.137087] (ardupilot_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/root/ros2_ws/install/ardupilot_msgs/lib/libardupilot_msgs__rosidl_typesupport_c.so" to ""\n'}
+[17.137319] (ardupilot_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs\n'}
+[17.137551] (ardupilot_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv\n'}
+[17.137781] (ardupilot_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail\n'}
+[17.138012] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail/arm_motors__type_support.cpp\n'}
+[17.138256] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail/mode_switch__rosidl_typesupport_introspection_cpp.hpp\n'}
+[17.138487] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail/mode_switch__type_support.cpp\n'}
+[17.138717] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/srv/detail/arm_motors__rosidl_typesupport_introspection_cpp.hpp\n'}
+[17.138948] (ardupilot_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg\n'}
+[17.139200] (ardupilot_msgs) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg/detail\n'}
+[17.139433] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg/detail/global_position__type_support.cpp\n'}
+[17.139668] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/include/ardupilot_msgs/ardupilot_msgs/msg/detail/global_position__rosidl_typesupport_introspection_cpp.hpp\n'}
+[17.139901] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/libardupilot_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[17.140133] (ardupilot_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/root/ros2_ws/install/ardupilot_msgs/lib/libardupilot_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[17.140380] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/libardupilot_msgs__rosidl_typesupport_cpp.so\n'}
+[17.140608] (ardupilot_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/root/ros2_ws/install/ardupilot_msgs/lib/libardupilot_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[17.140832] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/environment/pythonpath.sh\n'}
+[17.141055] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/environment/pythonpath.dsv\n'}
+[17.141281] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs-0.0.0-py3.12.egg-info\n'}
+[17.141498] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs-0.0.0-py3.12.egg-info/top_level.txt\n'}
+[17.141725] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs-0.0.0-py3.12.egg-info/dependency_links.txt\n'}
+[17.141943] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs-0.0.0-py3.12.egg-info/PKG-INFO\n'}
+[17.142150] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs-0.0.0-py3.12.egg-info/SOURCES.txt\n'}
+[17.142351] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs\n'}
+[17.142553] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs/ardupilot_msgs_s__rosidl_typesupport_fastrtps_c.so\n'}
+[17.142756] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs/_ardupilot_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[17.142959] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs/_ardupilot_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[17.143193] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs/srv\n'}
+[17.143398] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs/srv/_mode_switch.py\n'}
+[17.143598] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs/srv/_arm_motors.py\n'}
+[17.143799] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs/srv/_mode_switch_s.c\n'}
+[17.143997] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs/srv/__init__.py\n'}
+[17.144215] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs/srv/_arm_motors_s.c\n'}
+[17.144444] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs/ardupilot_msgs_s__rosidl_typesupport_c.so\n'}
+[17.144674] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs/_ardupilot_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[17.144902] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs/msg\n'}
+[17.145132] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs/msg/_global_position.py\n'}
+[17.145361] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs/msg/__init__.py\n'}
+[17.145591] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs/msg/_global_position_s.c\n'}
+[17.145820] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs/ardupilot_msgs_s__rosidl_typesupport_introspection_c.so\n'}
+[17.146052] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs/__init__.py\n'}
+[17.166982] (-) TimerEvent: {}
+[17.224125] (ardupilot_msgs) StdoutLine: {'line': b"Listing '/root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs'...\n"}
+[17.224503] (ardupilot_msgs) StdoutLine: {'line': b"Compiling '/root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs/__init__.py'...\n"}
+[17.224739] (ardupilot_msgs) StdoutLine: {'line': b"Listing '/root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs/msg'...\n"}
+[17.224966] (ardupilot_msgs) StdoutLine: {'line': b"Compiling '/root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs/msg/__init__.py'...\n"}
+[17.225182] (ardupilot_msgs) StdoutLine: {'line': b"Compiling '/root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs/msg/_global_position.py'...\n"}
+[17.225392] (ardupilot_msgs) StdoutLine: {'line': b"Listing '/root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs/srv'...\n"}
+[17.225602] (ardupilot_msgs) StdoutLine: {'line': b"Compiling '/root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs/srv/__init__.py'...\n"}
+[17.225850] (ardupilot_msgs) StdoutLine: {'line': b"Compiling '/root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs/srv/_arm_motors.py'...\n"}
+[17.226064] (ardupilot_msgs) StdoutLine: {'line': b"Compiling '/root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs/srv/_mode_switch.py'...\n"}
+[17.235643] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs/ardupilot_msgs_s__rosidl_typesupport_fastrtps_c.so\n'}
+[17.236108] (ardupilot_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs/ardupilot_msgs_s__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[17.236412] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs/ardupilot_msgs_s__rosidl_typesupport_introspection_c.so\n'}
+[17.236766] (ardupilot_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs/ardupilot_msgs_s__rosidl_typesupport_introspection_c.so" to ""\n'}
+[17.237068] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs/ardupilot_msgs_s__rosidl_typesupport_c.so\n'}
+[17.237466] (ardupilot_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/root/ros2_ws/install/ardupilot_msgs/lib/python3.12/site-packages/ardupilot_msgs/ardupilot_msgs_s__rosidl_typesupport_c.so" to ""\n'}
+[17.237734] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/lib/libardupilot_msgs__rosidl_generator_py.so\n'}
+[17.238094] (ardupilot_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/root/ros2_ws/install/ardupilot_msgs/lib/libardupilot_msgs__rosidl_generator_py.so" to ""\n'}
+[17.238342] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/msg/GlobalPosition.idl\n'}
+[17.238592] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/srv/ArmMotors.idl\n'}
+[17.238862] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/srv/ModeSwitch.idl\n'}
+[17.239118] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/msg/GlobalPosition.msg\n'}
+[17.239390] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/srv/ArmMotors.srv\n'}
+[17.239657] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/srv/ModeSwitch.srv\n'}
+[17.239920] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ament_index/resource_index/package_run_dependencies/ardupilot_msgs\n'}
+[17.240200] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ament_index/resource_index/parent_prefix_path/ardupilot_msgs\n'}
+[17.240464] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/environment/ament_prefix_path.sh\n'}
+[17.240729] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/environment/ament_prefix_path.dsv\n'}
+[17.241005] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/environment/path.sh\n'}
+[17.241271] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/environment/path.dsv\n'}
+[17.241552] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/local_setup.bash\n'}
+[17.241816] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/local_setup.sh\n'}
+[17.242077] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/local_setup.zsh\n'}
+[17.242345] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/local_setup.dsv\n'}
+[17.242607] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/package.dsv\n'}
+[17.242880] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ament_index/resource_index/packages/ardupilot_msgs\n'}
+[17.243183] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/cmake/export_ardupilot_msgs__rosidl_generator_cExport.cmake\n'}
+[17.243458] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/cmake/export_ardupilot_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[17.243731] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/cmake/export_ardupilot_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[17.244003] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/cmake/export_ardupilot_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[17.244280] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/cmake/export_ardupilot_msgs__rosidl_generator_cppExport.cmake\n'}
+[17.244545] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/cmake/export_ardupilot_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[17.244815] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/cmake/export_ardupilot_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[17.245095] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/cmake/ardupilot_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[17.245377] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/cmake/ardupilot_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[17.245647] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/cmake/ardupilot_msgs__rosidl_typesupport_cExport.cmake\n'}
+[17.245912] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/cmake/ardupilot_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[17.246189] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/cmake/ardupilot_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[17.246457] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/cmake/ardupilot_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[17.246768] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/cmake/ardupilot_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[17.247034] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/cmake/ardupilot_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[17.247315] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/cmake/export_ardupilot_msgs__rosidl_generator_pyExport.cmake\n'}
+[17.247576] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/cmake/export_ardupilot_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[17.247794] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[17.248017] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[17.248239] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[17.248476] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[17.248707] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[17.248939] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[17.249165] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[17.249368] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/cmake/ardupilot_msgsConfig.cmake\n'}
+[17.249570] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/cmake/ardupilot_msgsConfig-version.cmake\n'}
+[17.249859] (ardupilot_msgs) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/ardupilot_msgs/share/ardupilot_msgs/package.xml\n'}
+[17.250767] (ardupilot_msgs) CommandEnded: {'returncode': 0}
+[17.267102] (-) TimerEvent: {}
+[17.367455] (-) TimerEvent: {}
+[17.424029] (ardupilot_msgs) JobEnded: {'identifier': 'ardupilot_msgs', 'rc': 0}
+[17.467589] (-) TimerEvent: {}
+[17.567975] (-) TimerEvent: {}
+[17.668373] (-) TimerEvent: {}
+[17.768717] (-) TimerEvent: {}
+[17.869063] (-) TimerEvent: {}
+[17.969391] (-) TimerEvent: {}
+[18.069699] (-) TimerEvent: {}
+[18.170012] (-) TimerEvent: {}
+[18.270321] (-) TimerEvent: {}
+[18.370636] (-) TimerEvent: {}
+[18.470948] (-) TimerEvent: {}
+[18.571236] (-) TimerEvent: {}
+[18.671522] (-) TimerEvent: {}
+[18.771846] (-) TimerEvent: {}
+[18.872153] (-) TimerEvent: {}
+[18.972542] (-) TimerEvent: {}
+[19.072934] (-) TimerEvent: {}
+[19.173314] (-) TimerEvent: {}
+[19.273691] (-) TimerEvent: {}
+[19.374063] (-) TimerEvent: {}
+[19.474437] (-) TimerEvent: {}
+[19.574818] (-) TimerEvent: {}
+[19.675169] (-) TimerEvent: {}
+[19.775485] (-) TimerEvent: {}
+[19.875827] (-) TimerEvent: {}
+[19.976164] (-) TimerEvent: {}
+[20.076658] (-) TimerEvent: {}
+[20.177039] (-) TimerEvent: {}
+[20.277416] (-) TimerEvent: {}
+[20.377797] (-) TimerEvent: {}
+[20.478166] (-) TimerEvent: {}
+[20.578534] (-) TimerEvent: {}
+[20.678855] (-) TimerEvent: {}
+[20.779168] (-) TimerEvent: {}
+[20.879483] (-) TimerEvent: {}
+[20.979794] (-) TimerEvent: {}
+[21.080136] (-) TimerEvent: {}
+[21.180485] (-) TimerEvent: {}
+[21.280834] (-) TimerEvent: {}
+[21.381181] (-) TimerEvent: {}
+[21.481522] (-) TimerEvent: {}
+[21.581869] (-) TimerEvent: {}
+[21.682228] (-) TimerEvent: {}
+[21.782582] (-) TimerEvent: {}
+[21.882934] (-) TimerEvent: {}
+[21.983258] (-) TimerEvent: {}
+[22.083567] (-) TimerEvent: {}
+[22.183894] (-) TimerEvent: {}
+[22.284251] (-) TimerEvent: {}
+[22.384593] (-) TimerEvent: {}
+[22.484942] (-) TimerEvent: {}
+[22.585272] (-) TimerEvent: {}
+[22.685643] (-) TimerEvent: {}
+[22.786007] (-) TimerEvent: {}
+[22.886349] (-) TimerEvent: {}
+[22.986701] (-) TimerEvent: {}
+[23.087028] (-) TimerEvent: {}
+[23.187368] (-) TimerEvent: {}
+[23.287706] (-) TimerEvent: {}
+[23.388045] (-) TimerEvent: {}
+[23.488402] (-) TimerEvent: {}
+[23.588747] (-) TimerEvent: {}
+[23.689132] (-) TimerEvent: {}
+[23.789506] (-) TimerEvent: {}
+[23.889873] (-) TimerEvent: {}
+[23.990237] (-) TimerEvent: {}
+[24.090593] (-) TimerEvent: {}
+[24.190945] (-) TimerEvent: {}
+[24.291269] (-) TimerEvent: {}
+[24.391578] (-) TimerEvent: {}
+[24.491891] (-) TimerEvent: {}
+[24.592239] (-) TimerEvent: {}
+[24.692582] (-) TimerEvent: {}
+[24.792928] (-) TimerEvent: {}
+[24.893274] (-) TimerEvent: {}
+[24.993625] (-) TimerEvent: {}
+[25.093973] (-) TimerEvent: {}
+[25.194324] (-) TimerEvent: {}
+[25.278640] (micro_ros_agent) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking CXX static library libspdlog.a\x1b[0m\n'}
+[25.294462] (-) TimerEvent: {}
+[25.336536] (micro_ros_agent) StdoutLine: {'line': b'[ 80%] Built target spdlog\n'}
+[25.356638] (micro_ros_agent) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding CXX object example/CMakeFiles/example.dir/example.cpp.o\x1b[0m\n'}
+[25.394605] (-) TimerEvent: {}
+[25.494924] (-) TimerEvent: {}
+[25.595174] (-) TimerEvent: {}
+[25.695501] (-) TimerEvent: {}
+[25.795822] (-) TimerEvent: {}
+[25.896143] (-) TimerEvent: {}
+[25.996470] (-) TimerEvent: {}
+[26.096793] (-) TimerEvent: {}
+[26.197092] (-) TimerEvent: {}
+[26.297356] (-) TimerEvent: {}
+[26.397710] (-) TimerEvent: {}
+[26.498014] (-) TimerEvent: {}
+[26.598347] (-) TimerEvent: {}
+[26.698682] (-) TimerEvent: {}
+[26.799007] (-) TimerEvent: {}
+[26.899355] (-) TimerEvent: {}
+[26.999635] (-) TimerEvent: {}
+[27.099956] (-) TimerEvent: {}
+[27.200270] (-) TimerEvent: {}
+[27.300586] (-) TimerEvent: {}
+[27.400863] (-) TimerEvent: {}
+[27.501201] (-) TimerEvent: {}
+[27.601547] (-) TimerEvent: {}
+[27.701898] (-) TimerEvent: {}
+[27.802227] (-) TimerEvent: {}
+[27.902551] (-) TimerEvent: {}
+[28.002870] (-) TimerEvent: {}
+[28.103190] (-) TimerEvent: {}
+[28.203467] (-) TimerEvent: {}
+[28.303757] (-) TimerEvent: {}
+[28.404100] (-) TimerEvent: {}
+[28.504425] (-) TimerEvent: {}
+[28.604745] (-) TimerEvent: {}
+[28.705070] (-) TimerEvent: {}
+[28.805381] (-) TimerEvent: {}
+[28.905709] (-) TimerEvent: {}
+[29.006025] (-) TimerEvent: {}
+[29.106346] (-) TimerEvent: {}
+[29.206661] (-) TimerEvent: {}
+[29.306994] (-) TimerEvent: {}
+[29.407291] (-) TimerEvent: {}
+[29.507610] (-) TimerEvent: {}
+[29.607932] (-) TimerEvent: {}
+[29.708250] (-) TimerEvent: {}
+[29.808560] (-) TimerEvent: {}
+[29.908881] (-) TimerEvent: {}
+[30.009171] (-) TimerEvent: {}
+[30.109480] (-) TimerEvent: {}
+[30.209885] (-) TimerEvent: {}
+[30.310224] (-) TimerEvent: {}
+[30.410555] (-) TimerEvent: {}
+[30.510885] (-) TimerEvent: {}
+[30.611175] (-) TimerEvent: {}
+[30.711465] (-) TimerEvent: {}
+[30.811788] (-) TimerEvent: {}
+[30.912075] (-) TimerEvent: {}
+[31.012392] (-) TimerEvent: {}
+[31.112711] (-) TimerEvent: {}
+[31.203895] (micro_ros_agent) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable example\x1b[0m\n'}
+[31.212813] (-) TimerEvent: {}
+[31.313102] (-) TimerEvent: {}
+[31.319545] (micro_ros_agent) StdoutLine: {'line': b'[100%] Built target example\n'}
+[31.354197] (micro_ros_agent) StdoutLine: {'line': b"[ 43%] \x1b[34m\x1b[1mPerforming install step for 'spdlog'\x1b[0m\n"}
+[31.413249] (-) TimerEvent: {}
+[31.418467] (micro_ros_agent) StdoutLine: {'line': b'[ 80%] Built target spdlog\n'}
+[31.449157] (micro_ros_agent) StdoutLine: {'line': b'[100%] Built target example\n'}
+[31.471581] (micro_ros_agent) StdoutLine: {'line': b'\x1b[36mInstall the project...\x1b[0m\n'}
+[31.482307] (micro_ros_agent) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[31.482625] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include\n'}
+[31.482759] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog\n'}
+[31.482875] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/fmt\n'}
+[31.483031] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/fmt/xchar.h\n'}
+[31.483311] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/fmt/fmt.h\n'}
+[31.483495] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/fmt/chrono.h\n'}
+[31.483774] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/fmt/bin_to_hex.h\n'}
+[31.484097] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/fmt/ostr.h\n'}
+[31.484354] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/fmt/compile.h\n'}
+[31.484583] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/formatter.h\n'}
+[31.484801] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/stopwatch.h\n'}
+[31.485014] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/cfg\n'}
+[31.485225] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/cfg/env.h\n'}
+[31.485437] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/cfg/argv.h\n'}
+[31.485656] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/cfg/helpers-inl.h\n'}
+[31.485872] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/cfg/helpers.h\n'}
+[31.486087] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/async_logger-inl.h\n'}
+[31.486312] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/logger.h\n'}
+[31.486549] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/fwd.h\n'}
+[31.486776] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/async.h\n'}
+[31.486987] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/common.h\n'}
+[31.487213] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/version.h\n'}
+[31.487423] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/details\n'}
+[31.487629] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/details/tcp_client-windows.h\n'}
+[31.487821] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/details/file_helper-inl.h\n'}
+[31.488028] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/details/file_helper.h\n'}
+[31.488239] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/details/null_mutex.h\n'}
+[31.488451] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/details/log_msg.h\n'}
+[31.488659] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/details/log_msg_buffer-inl.h\n'}
+[31.488875] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/details/synchronous_factory.h\n'}
+[31.489087] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/details/os-inl.h\n'}
+[31.489292] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/details/tcp_client.h\n'}
+[31.489507] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/details/periodic_worker-inl.h\n'}
+[31.489711] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/details/registry-inl.h\n'}
+[31.489901] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/details/backtracer-inl.h\n'}
+[31.490108] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/details/thread_pool-inl.h\n'}
+[31.490315] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/details/fmt_helper.h\n'}
+[31.490521] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/details/backtracer.h\n'}
+[31.490727] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/details/thread_pool.h\n'}
+[31.490931] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/details/windows_include.h\n'}
+[31.491150] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/details/log_msg_buffer.h\n'}
+[31.491362] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/details/mpmc_blocking_q.h\n'}
+[31.491570] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/details/os.h\n'}
+[31.491775] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/details/log_msg-inl.h\n'}
+[31.491965] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/details/registry.h\n'}
+[31.492170] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/details/console_globals.h\n'}
+[31.492384] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/details/periodic_worker.h\n'}
+[31.492593] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/details/circular_q.h\n'}
+[31.492803] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/common-inl.h\n'}
+[31.493013] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/sinks\n'}
+[31.493233] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/sinks/rotating_file_sink.h\n'}
+[31.493441] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/sinks/win_eventlog_sink.h\n'}
+[31.493649] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/sinks/basic_file_sink.h\n'}
+[31.493859] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/sinks/dist_sink.h\n'}
+[31.494064] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/sinks/stdout_sinks-inl.h\n'}
+[31.494267] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/sinks/rotating_file_sink-inl.h\n'}
+[31.494471] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/sinks/android_sink.h\n'}
+[31.494660] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/sinks/msvc_sink.h\n'}
+[31.494868] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/sinks/dup_filter_sink.h\n'}
+[31.495380] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/sinks/ansicolor_sink-inl.h\n'}
+[31.495611] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/sinks/sink-inl.h\n'}
+[31.495828] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/sinks/ostream_sink.h\n'}
+[31.496037] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/sinks/mongo_sink.h\n'}
+[31.496236] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/sinks/qt_sinks.h\n'}
+[31.496445] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/sinks/wincolor_sink.h\n'}
+[31.496651] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/sinks/stdout_color_sinks-inl.h\n'}
+[31.496863] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/sinks/tcp_sink.h\n'}
+[31.497072] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/sinks/systemd_sink.h\n'}
+[31.497277] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/sinks/wincolor_sink-inl.h\n'}
+[31.497481] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/sinks/hourly_file_sink.h\n'}
+[31.497673] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/sinks/stdout_sinks.h\n'}
+[31.497871] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/sinks/daily_file_sink.h\n'}
+[31.498078] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/sinks/stdout_color_sinks.h\n'}
+[31.498283] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/sinks/null_sink.h\n'}
+[31.498501] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/sinks/syslog_sink.h\n'}
+[31.498708] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/sinks/sink.h\n'}
+[31.498913] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/sinks/ansicolor_sink.h\n'}
+[31.499130] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/sinks/base_sink-inl.h\n'}
+[31.499340] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/sinks/base_sink.h\n'}
+[31.499542] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/sinks/ringbuffer_sink.h\n'}
+[31.499743] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/sinks/basic_file_sink-inl.h\n'}
+[31.499936] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/pattern_formatter-inl.h\n'}
+[31.500156] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/spdlog-inl.h\n'}
+[31.500363] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/tweakme.h\n'}
+[31.500572] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/pattern_formatter.h\n'}
+[31.500779] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/logger-inl.h\n'}
+[31.500986] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/spdlog.h\n'}
+[31.501190] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/async_logger.h\n'}
+[31.501501] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/lib/libspdlog.a\n'}
+[31.503211] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/fmt/bundled/\n'}
+[31.503471] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/fmt/bundled//format-inl.h\n'}
+[31.503737] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/fmt/bundled//ostream.h\n'}
+[31.503981] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/fmt/bundled//xchar.h\n'}
+[31.504211] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/fmt/bundled//printf.h\n'}
+[31.504459] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/fmt/bundled//locale.h\n'}
+[31.504680] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/fmt/bundled//color.h\n'}
+[31.504931] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/fmt/bundled//args.h\n'}
+[31.505156] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/fmt/bundled//chrono.h\n'}
+[31.505436] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/fmt/bundled//os.h\n'}
+[31.505672] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/fmt/bundled//format.h\n'}
+[31.506000] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/fmt/bundled//core.h\n'}
+[31.506316] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/fmt/bundled//ranges.h\n'}
+[31.506556] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/include/spdlog/fmt/bundled//compile.h\n'}
+[31.506899] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/lib/pkgconfig/spdlog.pc\n'}
+[31.507529] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/lib/cmake/spdlog/spdlogConfigTargets.cmake\n'}
+[31.507821] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/lib/cmake/spdlog/spdlogConfigTargets-release.cmake\n'}
+[31.508102] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/lib/cmake/spdlog/spdlogConfig.cmake\n'}
+[31.508332] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/temp_install/spdlog-1.9.2/lib/cmake/spdlog/spdlogConfigVersion.cmake\n'}
+[31.513319] (-) TimerEvent: {}
+[31.531389] (micro_ros_agent) StdoutLine: {'line': b"[ 50%] \x1b[34m\x1b[1mCompleted 'spdlog'\x1b[0m\n"}
+[31.571692] (micro_ros_agent) StdoutLine: {'line': b'[ 50%] Built target spdlog\n'}
+[31.594980] (micro_ros_agent) StdoutLine: {'line': b"[ 56%] \x1b[34m\x1b[1mCreating directories for 'uagent'\x1b[0m\n"}
+[31.613457] (-) TimerEvent: {}
+[31.624534] (micro_ros_agent) StdoutLine: {'line': b"[ 62%] \x1b[34m\x1b[1mNo download step for 'uagent'\x1b[0m\n"}
+[31.654213] (micro_ros_agent) StdoutLine: {'line': b"[ 68%] \x1b[34m\x1b[1mNo update step for 'uagent'\x1b[0m\n"}
+[31.682971] (micro_ros_agent) StdoutLine: {'line': b"[ 75%] \x1b[34m\x1b[1mNo patch step for 'uagent'\x1b[0m\n"}
+[31.709339] (micro_ros_agent) StdoutLine: {'line': b"[ 81%] \x1b[34m\x1b[1mPerforming configure step for 'uagent'\x1b[0m\n"}
+[31.713571] (-) TimerEvent: {}
+[31.719036] (micro_ros_agent) StdoutLine: {'line': b'loading initial cache file /root/ros2_ws/build/micro_ros_agent/agent/src/xrceagent-build/uagent-prefix/tmp/uagent-cache-.cmake\n'}
+[31.727024] (micro_ros_agent) StdoutLine: {'line': b"-- Setting build type to 'Release' as none was specified.\n"}
+[31.750746] (micro_ros_agent) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:153 (find_package):\n'}
+[31.751104] (micro_ros_agent) StderrLine: {'line': b'  Could not find a configuration file for package "fastcdr" that is\n'}
+[31.751368] (micro_ros_agent) StderrLine: {'line': b'  compatible with requested version "1".\n'}
+[31.751484] (micro_ros_agent) StderrLine: {'line': b'\n'}
+[31.751582] (micro_ros_agent) StderrLine: {'line': b'  The following configuration files were considered but not accepted:\n'}
+[31.751678] (micro_ros_agent) StderrLine: {'line': b'\n'}
+[31.751771] (micro_ros_agent) StderrLine: {'line': b'    /opt/ros/rolling/lib/cmake/fastcdr/fastcdr-config.cmake, version: 2.2.2\n'}
+[31.751865] (micro_ros_agent) StderrLine: {'line': b'\n'}
+[31.751957] (micro_ros_agent) StderrLine: {'line': b'\n'}
+[31.752048] (micro_ros_agent) StderrLine: {'line': b'\x1b[0m\n'}
+[31.752140] (micro_ros_agent) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[31.752972] (micro_ros_agent) StderrLine: {'line': b'gmake[5]: *** [CMakeFiles/uagent.dir/build.make:94: uagent-prefix/src/uagent-stamp/uagent-configure] Error 1\n'}
+[31.753157] (micro_ros_agent) StderrLine: {'line': b'gmake[4]: *** [CMakeFiles/Makefile2:111: CMakeFiles/uagent.dir/all] Error 2\n'}
+[31.753368] (micro_ros_agent) StderrLine: {'line': b'gmake[3]: *** [Makefile:91: all] Error 2\n'}
+[31.753676] (micro_ros_agent) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/xrceagent.dir/build.make:86: agent/src/xrceagent-stamp/xrceagent-build] Error 2\n'}
+[31.753871] (micro_ros_agent) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:85: CMakeFiles/xrceagent.dir/all] Error 2\n'}
+[31.754046] (micro_ros_agent) StderrLine: {'line': b'gmake: *** [Makefile:91: all] Error 2\n'}
+[31.755885] (micro_ros_agent) CommandEnded: {'returncode': 2}
+[31.778458] (micro_ros_agent) JobEnded: {'identifier': 'micro_ros_agent', 'rc': 2}
+[31.789119] (ardupilot_sitl) JobSkipped: {'identifier': 'ardupilot_sitl'}
+[31.789169] (ardupilot_dds_tests) JobSkipped: {'identifier': 'ardupilot_dds_tests'}
+[31.789194] (-) EventReactorShutdown: {}

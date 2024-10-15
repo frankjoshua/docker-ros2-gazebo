@@ -6,7 +6,7 @@ USER root
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update \
    && apt-get -y install --no-install-recommends  ros-${ROS_DISTRO}-gz-* \
-   #
+   \
    # Clean up
    && apt-get autoremove -y \
    && apt-get clean -y \
@@ -31,9 +31,14 @@ http://packages.osrfoundation.org/gazebo/ubuntu-stable $(lsb_release -cs) main" 
 RUN apt-get update && apt-get install -y \
     gz-harmonic \
  && rm -rf /var/lib/apt/lists/*
- 
-ENV DEBIAN_FRONTEND=dialog
 
+# Set Gazebo environment variables
+ENV GAZEBO_MODEL_PATH=/usr/share/gazebo-11/models:${GAZEBO_MODEL_PATH}
+ENV GAZEBO_RESOURCE_PATH=/usr/share/gazebo-11:${GAZEBO_RESOURCE_PATH}
+ENV GAZEBO_PLUGIN_PATH=/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:${GAZEBO_PLUGIN_PATH}
+ENV GAZEBO_SYSTEM_PLUGIN_PATH=/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:${GAZEBO_SYSTEM_PLUGIN_PATH}
+
+ENV DEBIAN_FRONTEND=dialog
 
 USER root
 WORKDIR /root
@@ -44,4 +49,4 @@ COPY ros_entrypoint.sh /ros_entrypoint.sh
 RUN chmod +x /ros_entrypoint.sh
 ENTRYPOINT ["/ros_entrypoint.sh"]
 
-CMD [ "/bin/bash", "-i", "-c", "gz sim"]
+CMD [ "/bin/bash", "-i", "-c", "gz sim" ]

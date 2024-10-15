@@ -1,0 +1,21 @@
+[0.627s] Invoking command in '/workspaces/docker-ros2-gazebo/ros2_ws/src/example_pkg': PYTHONPATH=/workspaces/docker-ros2-gazebo/ros2_ws/build/example_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/docker-ros2-gazebo/ros2_ws/install/example_pkg/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/example_pkg build --build-base /workspaces/docker-ros2-gazebo/ros2_ws/build/example_pkg/build install --record /workspaces/docker-ros2-gazebo/ros2_ws/build/example_pkg/install.log --single-version-externally-managed install_data
+[0.847s] running egg_info
+[0.859s] writing ../../build/example_pkg/example_pkg.egg-info/PKG-INFO
+[0.859s] writing dependency_links to ../../build/example_pkg/example_pkg.egg-info/dependency_links.txt
+[0.860s] writing entry points to ../../build/example_pkg/example_pkg.egg-info/entry_points.txt
+[0.860s] writing requirements to ../../build/example_pkg/example_pkg.egg-info/requires.txt
+[0.860s] writing top-level names to ../../build/example_pkg/example_pkg.egg-info/top_level.txt
+[0.886s] reading manifest file '../../build/example_pkg/example_pkg.egg-info/SOURCES.txt'
+[0.887s] writing manifest file '../../build/example_pkg/example_pkg.egg-info/SOURCES.txt'
+[0.887s] running build
+[0.888s] running build_py
+[0.888s] running install
+[0.893s] running install_lib
+[0.906s] running install_data
+[0.906s] running install_egg_info
+[0.922s] removing '/workspaces/docker-ros2-gazebo/ros2_ws/install/example_pkg/lib/python3.12/site-packages/example_pkg-0.0.0-py3.12.egg-info' (and everything under it)
+[0.922s] Copying ../../build/example_pkg/example_pkg.egg-info to /workspaces/docker-ros2-gazebo/ros2_ws/install/example_pkg/lib/python3.12/site-packages/example_pkg-0.0.0-py3.12.egg-info
+[0.924s] running install_scripts
+[1.017s] Installing example_node script to /workspaces/docker-ros2-gazebo/ros2_ws/install/example_pkg/lib/example_pkg
+[1.017s] writing list of installed files to '/workspaces/docker-ros2-gazebo/ros2_ws/build/example_pkg/install.log'
+[1.064s] Invoked command in '/workspaces/docker-ros2-gazebo/ros2_ws/src/example_pkg' returned '0': PYTHONPATH=/workspaces/docker-ros2-gazebo/ros2_ws/build/example_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/docker-ros2-gazebo/ros2_ws/install/example_pkg/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/example_pkg build --build-base /workspaces/docker-ros2-gazebo/ros2_ws/build/example_pkg/build install --record /workspaces/docker-ros2-gazebo/ros2_ws/build/example_pkg/install.log --single-version-externally-managed install_data
